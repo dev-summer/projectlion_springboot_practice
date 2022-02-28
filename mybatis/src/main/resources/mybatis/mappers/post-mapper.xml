@@ -8,11 +8,25 @@
         <!-- #{title} == 'title' -->
         <!-- ${title} == title -->
     </insert>
+    <insert id="createAllPost" parameterType="dev.summer.mybatis.dto.PostDto">
+        insert into POST(title, content, writer, board)
+        values
+               <foreach collection="list" item="item" separator=",">
+               (#{item.title}, #{item.content}, #{item.writer}, ${item.board})
+               </foreach>
+    </insert>
     <select id="readPost" parameterType="int" resultType="dev.summer.mybatis.dto.PostDto">
         select * from post where id = ${id}
     </select>
     <select id="readPost" resultType="dev.summer.mybatis.dto.PostDto">
         select * from post
+    </select>
+    <select id="readPostQuery" parameterType="dev.summer.mybatis.dto.PostDto" resultType="dev.summer.mybatis.dto.PostDto">
+        select * from post
+        where title = #{title}
+        <if test="writer != null">
+            and writer = #{writer}
+        </if>
     </select>
     <update id="updatePost" parameterType="dev.summer.mybatis.dto.PostDto">
         update post set title = #{title},
