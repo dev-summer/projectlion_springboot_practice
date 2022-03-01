@@ -10,14 +10,18 @@ import java.util.List;
 
 public class TestComponent {
     private final PostDao postDao;
-//    private final BoardDao boardDao;
+    private final BoardDao boardDao;
 
     public TestComponent(
-            @Autowired PostDao postDao
-//            @Autowired BoardDao boardDao
+            @Autowired PostDao postDao, BoardDao boardDao
     ){
         this.postDao = postDao;
-//        this.boardDao = boardDao;
+        this.boardDao = boardDao;
+
+        BoardDto boardDto = new BoardDto();
+        boardDto.setName("new board");
+        this.boardDao.createBoard(boardDto);
+        System.out.println(boardDto.getId());
 
         PostDto newPost = new PostDto();
         newPost.setTitle("From MyBatis");
@@ -32,11 +36,5 @@ public class TestComponent {
         PostDto firstPost = postDtoList.get(0);
         firstPost.setContent("Update From MyBatis!");
         postDao.updatePost(firstPost);
-
-
-//        BoardDto boardDto = new BoardDto();
-//        boardDto.setName("new board");
-//        this.boardDao.createBoard(boardDto);
-//        System.out.println(boardDto.getId());
     }
 }

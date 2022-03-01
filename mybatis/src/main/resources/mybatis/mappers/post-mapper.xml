@@ -18,7 +18,7 @@
     <select id="readPost" parameterType="int" resultType="dev.summer.mybatis.dto.PostDto">
         select * from post where id = ${id}
     </select>
-    <select id="readPost" resultType="dev.summer.mybatis.dto.PostDto">
+    <select id="readAllPost" resultType="dev.summer.mybatis.dto.PostDto">
         select * from post
     </select>
     <select id="readPostQuery" parameterType="dev.summer.mybatis.dto.PostDto" resultType="dev.summer.mybatis.dto.PostDto">

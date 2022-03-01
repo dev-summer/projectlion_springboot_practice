@@ -11,7 +11,9 @@ import org.springframework.stereotype.Repository;
 public class BoardDao {
     private final SqlSessionFactory sessionFactory;
 
-    public BoardDao (@Autowired SqlSessionFactory sessionFactory){
+    public BoardDao (
+            @Autowired SqlSessionFactory sessionFactory
+    ){
         this.sessionFactory = sessionFactory;
     }
 
