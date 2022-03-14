@@ -1,5 +1,5 @@
-2022-03-14 23:48:29,556 WARN AbstractApplicationContext [Test worker] Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'postController' defined in file [/Users/jiyounglee/Desktop/projectlion/JSB_the_origin/practice/jpa/build/classes/java/main/dev/summer/jpa/PostController.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'dev.summer.jpa.PostService' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
-2022-03-14 23:48:29,576 ERROR LoggingFailureAnalysisReporter [Test worker] 
+2022-03-14 23:48:28,284 WARN AbstractApplicationContext [Test worker] Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'postController' defined in file [/Users/jiyounglee/Desktop/projectlion/JSB_the_origin/practice/jpa/build/classes/java/main/dev/summer/jpa/PostController.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'dev.summer.jpa.PostService' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+2022-03-14 23:48:28,352 ERROR LoggingFailureAnalysisReporter [Test worker] 
 
 ***************************
 APPLICATION FAILED TO START
@@ -17,8 +17,8 @@ Action:
 
 Consider defining a bean of type 'dev.summer.jpa.PostService' in your configuration.
 
-2022-03-14 23:48:29,915 WARN AbstractApplicationContext [Test worker] Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'postController' defined in file [/Users/jiyounglee/Desktop/projectlion/JSB_the_origin/practice/jpa/build/classes/java/main/dev/summer/jpa/PostController.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'dev.summer.jpa.PostService' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
-2022-03-14 23:48:29,921 ERROR LoggingFailureAnalysisReporter [Test worker] 
+2022-03-14 23:48:28,883 WARN AbstractApplicationContext [Test worker] Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'postController' defined in file [/Users/jiyounglee/Desktop/projectlion/JSB_the_origin/practice/jpa/build/classes/java/main/dev/summer/jpa/PostController.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'dev.summer.jpa.PostService' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+2022-03-14 23:48:28,892 ERROR LoggingFailureAnalysisReporter [Test worker] 
 
 ***************************
 APPLICATION FAILED TO START
@@ -36,7 +36,7 @@ Action:
 
 Consider defining a bean of type 'dev.summer.jpa.PostService' in your configuration.
 
-2022-03-14 23:48:29,923 ERROR TestContextManager [Test worker] Caught exception while allowing TestExecutionListener [org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@751d3241] to prepare test instance [dev.summer.jpa.PostControllerTest@6401188a]
+2022-03-14 23:48:28,897 ERROR TestContextManager [Test worker] Caught exception while allowing TestExecutionListener [org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@751d3241] to prepare test instance [dev.summer.jpa.PostControllerTest@672f11c2]
 java.lang.IllegalStateException: Failed to load ApplicationContext
 	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:132)
 	at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:124)
