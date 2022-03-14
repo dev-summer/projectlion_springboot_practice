@@ -1,0 +1,61 @@
+2022-03-04 21:45:36,197 INFO StartupInfoLogger [main] Starting JpaApplication using Java 11.0.13 on Jiyoungs-MacBook-Air.local with PID 25600 (/Users/jiyounglee/Desktop/projectlion/JSB_the_origin/practice/jpa/build/classes/java/main started by jiyounglee in /Users/jiyounglee/Desktop/projectlion/JSB_the_origin/practice/jpa)
+2022-03-04 21:45:36,203 DEBUG StartupInfoLogger [main] Running with Spring Boot v2.5.10, Spring v5.3.16
+2022-03-04 21:45:36,204 INFO SpringApplication [main] The following 1 profile is active: "local"
+2022-03-04 21:45:36,204 DEBUG SpringApplication [main] Loading source class dev.summer.jpa.JpaApplication
+2022-03-04 21:45:36,266 DEBUG AbstractApplicationContext [main] Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@f19c9d2
+2022-03-04 21:45:36,287 DEBUG DefaultSingletonBeanRegistry [main] Creating shared instance of singleton bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
+2022-03-04 21:45:36,293 DEBUG DefaultSingletonBeanRegistry [main] Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.internalCachingMetadataReaderFactory'
+2022-03-04 21:45:36,341 DEBUG ClassPathScanningCandidateComponentProvider [main] Identified candidate component class: file [/Users/jiyounglee/Desktop/projectlion/JSB_the_origin/practice/jpa/build/classes/java/main/dev/summer/jpa/DemoConfig.class]
+2022-03-04 21:45:36,356 DEBUG ClassPathScanningCandidateComponentProvider [main] Identified candidate component class: file [/Users/jiyounglee/Desktop/projectlion/JSB_the_origin/practice/jpa/build/classes/java/main/dev/summer/jpa/PostController.class]
+2022-03-04 21:45:36,360 DEBUG ClassPathScanningCandidateComponentProvider [main] Identified candidate component class: file [/Users/jiyounglee/Desktop/projectlion/JSB_the_origin/practice/jpa/build/classes/java/main/dev/summer/jpa/PostDao.class]
+2022-03-04 21:45:36,361 DEBUG ClassPathScanningCandidateComponentProvider [main] Identified candidate component class: file [/Users/jiyounglee/Desktop/projectlion/JSB_the_origin/practice/jpa/build/classes/java/main/dev/summer/jpa/PostService.class]
+2022-03-04 21:45:36,370 DEBUG ClassPathScanningCandidateComponentProvider [main] Identified candidate component class: file [/Users/jiyounglee/Desktop/projectlion/JSB_the_origin/practice/jpa/build/classes/java/main/dev/summer/jpa/ProfileComponent.class]
+2022-03-04 21:45:36,472 DEBUG Log$LoggerLog [RMI TCP Connection(1)-172.30.1.42] RMI TCP Connection(1)-172.30.1.42: (port 52517) op = 82
+2022-03-04 21:45:36,478 DEBUG Log$LoggerLog [RMI TCP Connection(1)-172.30.1.42] RMI TCP Connection(1)-172.30.1.42: (port 52517) op = 80
+2022-03-04 21:45:36,482 DEBUG Log$LoggerLog [RMI TCP Connection(1)-172.30.1.42] RMI TCP Connection(1)-172.30.1.42: (port 52517) op = 80
+2022-03-04 21:45:36,498 DEBUG Log$LoggerLog [RMI TCP Connection(1)-172.30.1.42] RMI TCP Connection(1)-172.30.1.42: name = "[Ljava.rmi.server.ObjID;", codebase = "", defaultLoader = jdk.internal.loader.ClassLoaders$PlatformClassLoader@2d0aa448
+2022-03-04 21:45:36,499 DEBUG Log$LoggerLog [RMI TCP Connection(1)-172.30.1.42] RMI TCP Connection(1)-172.30.1.42: name = "java.rmi.server.ObjID", codebase = "", defaultLoader = jdk.internal.loader.ClassLoaders$PlatformClassLoader@2d0aa448
+2022-03-04 21:45:36,500 DEBUG Log$LoggerLog [RMI TCP Connection(1)-172.30.1.42] RMI TCP Connection(1)-172.30.1.42: name = "java.rmi.server.UID", codebase = "", defaultLoader = jdk.internal.loader.ClassLoaders$PlatformClassLoader@2d0aa448
+2022-03-04 21:45:36,500 DEBUG Log$LoggerLog [RMI TCP Connection(1)-172.30.1.42] RMI TCP Connection(1)-172.30.1.42: name = "java.rmi.dgc.Lease", codebase = "", defaultLoader = jdk.internal.loader.ClassLoaders$PlatformClassLoader@2d0aa448
+2022-03-04 21:45:36,500 DEBUG Log$LoggerLog [RMI TCP Connection(1)-172.30.1.42] RMI TCP Connection(1)-172.30.1.42: name = "java.rmi.dgc.VMID", codebase = "", defaultLoader = jdk.internal.loader.ClassLoaders$PlatformClassLoader@2d0aa448
+2022-03-04 21:45:36,500 DEBUG Log$LoggerLog [RMI TCP Connection(1)-172.30.1.42] RMI TCP Connection(1)-172.30.1.42: name = "[B", codebase = "", defaultLoader = jdk.internal.loader.ClassLoaders$PlatformClassLoader@2d0aa448
+2022-03-04 21:45:36,501 DEBUG Log$LoggerLog [RMI TCP Connection(1)-172.30.1.42] RMI TCP Connection(1)-172.30.1.42: (port 52517) op = 84
+2022-03-04 21:45:36,502 DEBUG Log$LoggerLog [RMI TCP Connection(1)-172.30.1.42] RMI TCP Connection(1)-172.30.1.42: (port 52517) op = 80
+2022-03-04 21:45:36,503 DEBUG Log$LoggerLog [RMI TCP Connection(1)-172.30.1.42] RMI TCP Connection(1)-172.30.1.42: (port 52517) op = 80
+2022-03-04 21:45:36,503 DEBUG Log$LoggerLog [RMI TCP Connection(1)-172.30.1.42] RMI TCP Connection(1)-172.30.1.42: name = "javax.management.ObjectName", codebase = ""
+2022-03-04 21:45:36,504 DEBUG LoggingProviderImpl$JULWrapper [RMI TCP Connection(1)-172.30.1.42] connectionId=rmi://172.30.1.42  2, name=org.springframework.boot:type=Admin,name=SpringApplication, attribute=Ready
+2022-03-04 21:45:36,509 DEBUG Log$LoggerLog [RMI TCP Connection(1)-172.30.1.42] RMI TCP Connection(1)-172.30.1.42: [172.30.1.42] exception: 
+javax.management.InstanceNotFoundException: org.springframework.boot:type=Admin,name=SpringApplication
+	at java.management/com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.getMBean(DefaultMBeanServerInterceptor.java:1083)
+	at java.management/com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.getAttribute(DefaultMBeanServerInterceptor.java:637)
+	at java.management/com.sun.jmx.mbeanserver.JmxMBeanServer.getAttribute(JmxMBeanServer.java:678)
+	at java.management.rmi/javax.management.remote.rmi.RMIConnectionImpl.doOperation(RMIConnectionImpl.java:1443)
+	at java.management.rmi/javax.management.remote.rmi.RMIConnectionImpl$PrivilegedOperation.run(RMIConnectionImpl.java:1307)
+	at java.management.rmi/javax.management.remote.rmi.RMIConnectionImpl.doPrivilegedOperation(RMIConnectionImpl.java:1399)
+	at java.management.rmi/javax.management.remote.rmi.RMIConnectionImpl.getAttribute(RMIConnectionImpl.java:637)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at java.rmi/sun.rmi.server.UnicastServerRef.dispatch(UnicastServerRef.java:359)
+	at java.rmi/sun.rmi.transport.Transport$1.run(Transport.java:200)
+	at java.rmi/sun.rmi.transport.Transport$1.run(Transport.java:197)
+	at java.base/java.security.AccessController.doPrivileged(Native Method)
+	at java.rmi/sun.rmi.transport.Transport.serviceCall(Transport.java:196)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport.handleMessages(TCPTransport.java:562)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run0(TCPTransport.java:796)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.lambda$run$0(TCPTransport.java:677)
+	at java.base/java.security.AccessController.doPrivileged(Native Method)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run(TCPTransport.java:676)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+2022-03-04 21:45:36,512 DEBUG Log$LoggerLog [RMI TCP Connection(1)-172.30.1.42] RMI TCP Connection(1)-172.30.1.42: (port 52517) op = 80
+2022-03-04 21:45:36,513 DEBUG LoggingProviderImpl$JULWrapper [RMI TCP Connection(1)-172.30.1.42] [javax.management.remote.rmi.RMIConnectionImpl@d66bfcb: connectionId=rmi://172.30.1.42  2] closing.
+2022-03-04 21:45:36,520 DEBUG LoggingProviderImpl$JULWrapper [RMI TCP Connection(1)-172.30.1.42] [javax.management.remote.rmi.RMIConnectionImpl@d66bfcb: connectionId=rmi://172.30.1.42  2] closed.
+2022-03-04 21:45:36,976 INFO RepositoryConfigurationDelegate [main] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-03-04 21:45:36,980 DEBUG DefaultSingletonBeanRegistry [main] Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.AutoConfigurationPackages'
+2022-03-04 21:45:36,981 DEBUG AutoConfigurationPackages$BasePackages [main] @EnableAutoConfiguration was declared on a class in the package 'dev.summer.jpa'. Automatic @Repository and @Entity scanning is enabled.
+2022-03-04 21:45:36,982 DEBUG RepositoryConfigurationDelegate [main] Scanning for JPA repositories in packages dev.summer.jpa.
+2022-03-04 21:45:36,991 DEBUG ClassPathScanningCandidateComponentProvider [main] Identified candidate component class: file [/Users/jiyounglee/Desktop/projectlion/JSB_the_origin/practice/jpa/build/classes/java/main/dev/summer/jpa/repository/BoardRepository.class]
+2022-03-04 21:45:36,991 DEBUG ClassPathScanningCandidateComponentProvider [main] Identified candidate component class: file [/Users/jiyounglee/Desktop/projectlion/JSB_the_origin/practice/jpa/build/classes/java/main/dev/summer/jpa/repository/PostRepository.class]

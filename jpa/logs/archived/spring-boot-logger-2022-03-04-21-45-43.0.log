@@ -1,0 +1,29 @@
+2022-03-04 21:45:43,841 DEBUG ApplicationAvailabilityBean [SpringApplicationShutdownHook] Application availability state ReadinessState changed from ACCEPTING_TRAFFIC to REFUSING_TRAFFIC
+2022-03-04 21:45:43,845 DEBUG AbstractApplicationContext [SpringApplicationShutdownHook] Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@f19c9d2, started on Fri Mar 04 21:45:36 KST 2022
+2022-03-04 21:45:43,845 DEBUG PropertySourcesPropertyResolver [SpringApplicationShutdownHook] Found key 'spring.liveBeansView.mbeanDomain' in PropertySource 'systemProperties' with value of type String
+2022-03-04 21:45:43,848 DEBUG DefaultLifecycleProcessor$LifecycleGroup [SpringApplicationShutdownHook] Stopping beans in phase 2147483647
+2022-03-04 21:45:43,851 DEBUG DefaultLifecycleProcessor [SpringApplicationShutdownHook] Bean 'webServerGracefulShutdown' completed its stop procedure
+2022-03-04 21:45:43,851 DEBUG DefaultLifecycleProcessor$LifecycleGroup [SpringApplicationShutdownHook] Stopping beans in phase 2147483646
+2022-03-04 21:45:43,878 DEBUG DefaultLifecycleProcessor [SpringApplicationShutdownHook] Bean 'webServerStartStop' completed its stop procedure
+2022-03-04 21:45:43,880 DEBUG MBeanExporter [SpringApplicationShutdownHook] Unregistering JMX-exposed beans on shutdown
+2022-03-04 21:45:43,880 DEBUG MBeanRegistrationSupport [SpringApplicationShutdownHook] Unregistering JMX-exposed beans
+2022-03-04 21:45:43,881 DEBUG ExecutorConfigurationSupport [SpringApplicationShutdownHook] Shutting down ExecutorService 'applicationTaskExecutor'
+2022-03-04 21:45:43,882 INFO AbstractEntityManagerFactoryBean [SpringApplicationShutdownHook] Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-03-04 21:45:43,884 DEBUG SessionFactoryImpl [SpringApplicationShutdownHook] HHH000031: Closing
+2022-03-04 21:45:43,885 DEBUG TypeConfiguration$Scope [SpringApplicationShutdownHook] Un-scoping TypeConfiguration [org.hibernate.type.spi.TypeConfiguration$Scope@303de0e0] from SessionFactory [org.hibernate.internal.SessionFactoryImpl@8debe42]
+2022-03-04 21:45:43,888 DEBUG AbstractServiceRegistryImpl [SpringApplicationShutdownHook] Implicitly destroying ServiceRegistry on de-registration of all child ServiceRegistries
+2022-03-04 21:45:43,888 DEBUG BootstrapServiceRegistryImpl [SpringApplicationShutdownHook] Implicitly destroying Boot-strap registry on de-registration of all child ServiceRegistries
+2022-03-04 21:45:43,889 INFO HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown initiated...
+2022-03-04 21:45:43,889 DEBUG HikariPool [SpringApplicationShutdownHook] HikariPool-1 - Before shutdown stats (total=10, active=0, idle=10, waiting=0)
+2022-03-04 21:45:43,890 DEBUG PoolBase [HikariPool-1 connection closer] HikariPool-1 - Closing connection com.mysql.cj.jdbc.ConnectionImpl@30517a57: (connection evicted)
+2022-03-04 21:45:43,898 DEBUG PoolBase [HikariPool-1 connection closer] HikariPool-1 - Closing connection com.mysql.cj.jdbc.ConnectionImpl@40c3049c: (connection evicted)
+2022-03-04 21:45:43,903 DEBUG PoolBase [HikariPool-1 connection closer] HikariPool-1 - Closing connection com.mysql.cj.jdbc.ConnectionImpl@1fe0ea7: (connection evicted)
+2022-03-04 21:45:43,908 DEBUG PoolBase [HikariPool-1 connection closer] HikariPool-1 - Closing connection com.mysql.cj.jdbc.ConnectionImpl@61d1f1e8: (connection evicted)
+2022-03-04 21:45:43,912 DEBUG PoolBase [HikariPool-1 connection closer] HikariPool-1 - Closing connection com.mysql.cj.jdbc.ConnectionImpl@659f6c88: (connection evicted)
+2022-03-04 21:45:43,917 DEBUG PoolBase [HikariPool-1 connection closer] HikariPool-1 - Closing connection com.mysql.cj.jdbc.ConnectionImpl@20117829: (connection evicted)
+2022-03-04 21:45:43,920 DEBUG PoolBase [HikariPool-1 connection closer] HikariPool-1 - Closing connection com.mysql.cj.jdbc.ConnectionImpl@49b9b972: (connection evicted)
+2022-03-04 21:45:43,922 DEBUG PoolBase [HikariPool-1 connection closer] HikariPool-1 - Closing connection com.mysql.cj.jdbc.ConnectionImpl@5e27e495: (connection evicted)
+2022-03-04 21:45:43,925 DEBUG PoolBase [HikariPool-1 connection closer] HikariPool-1 - Closing connection com.mysql.cj.jdbc.ConnectionImpl@1c2d255a: (connection evicted)
+2022-03-04 21:45:43,927 DEBUG PoolBase [HikariPool-1 connection closer] HikariPool-1 - Closing connection com.mysql.cj.jdbc.ConnectionImpl@2df58933: (connection evicted)
+2022-03-04 21:45:43,930 DEBUG HikariPool [SpringApplicationShutdownHook] HikariPool-1 - After shutdown stats (total=0, active=0, idle=0, waiting=0)
+2022-03-04 21:45:43,930 INFO HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown completed.

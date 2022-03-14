@@ -1,0 +1,393 @@
+2022-03-04 21:45:39,001 DEBUG LoadQueryJoinAndFetchProcessor [main] processing queryspace <gen:0>
+2022-03-04 21:45:39,005 DEBUG LoadPlanTreePrinter [main] LoadPlan(entity=dev.summer.jpa.entity.PostEntity)
+    - Returns
+       - EntityReturnImpl(entity=dev.summer.jpa.entity.PostEntity, querySpaceUid=<gen:0>, path=dev.summer.jpa.entity.PostEntity)
+          - EntityAttributeFetchImpl(entity=dev.summer.jpa.entity.BoardEntity, querySpaceUid=<gen:1>, path=dev.summer.jpa.entity.PostEntity.boardEntity)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=dev.summer.jpa.entity.PostEntity)
+          - SQL table alias mapping - postentity0_
+          - alias suffix - 0_
+          - suffixed key columns - {id1_1_0_}
+
+2022-03-04 21:45:39,007 DEBUG EntityLoader [main] Static select for entity dev.summer.jpa.entity.PostEntity [NONE]: select postentity0_.id as id1_1_0_, postentity0_.created_at as created_2_1_0_, postentity0_.updated_at as updated_3_1_0_, postentity0_.board_id as board_id7_1_0_, postentity0_.content as content4_1_0_, postentity0_.title as title5_1_0_, postentity0_.writer as writer6_1_0_ from post postentity0_ where postentity0_.id=?
+2022-03-04 21:45:39,008 DEBUG AbstractEntityPersister [main] Static SQL for entity: dev.summer.jpa.entity.BoardEntity
+2022-03-04 21:45:39,008 DEBUG AbstractEntityPersister [main]  Version select: select id from board where id =?
+2022-03-04 21:45:39,008 DEBUG AbstractEntityPersister [main]  Snapshot select: select boardentit_.id, boardentit_.updated_at as updated_3_0_, boardentit_.board_name as board_na4_0_ from board boardentit_ where boardentit_.id=?
+2022-03-04 21:45:39,008 DEBUG DelegatingBasicLogger [main]  Insert 0: insert into board (created_at, updated_at, board_name, id) values (?, ?, ?, ?)
+2022-03-04 21:45:39,008 DEBUG DelegatingBasicLogger [main]  Update 0: update board set updated_at=?, board_name=? where id=?
+2022-03-04 21:45:39,008 DEBUG DelegatingBasicLogger [main]  Delete 0: delete from board where id=?
+2022-03-04 21:45:39,008 DEBUG AbstractEntityPersister [main]  Identity insert: insert into board (created_at, updated_at, board_name) values (?, ?, ?)
+2022-03-04 21:45:39,008 DEBUG QuerySpacesImpl [main] Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@2f262474]
+2022-03-04 21:45:39,008 DEBUG MetamodelGraphWalker [main] Visiting attribute path : createdAt
+2022-03-04 21:45:39,008 DEBUG MetamodelGraphWalker [main] Visiting attribute path : updatedAt
+2022-03-04 21:45:39,008 DEBUG MetamodelGraphWalker [main] Visiting attribute path : name
+2022-03-04 21:45:39,009 DEBUG MetamodelGraphWalker [main] Visiting attribute path : postEntityList
+2022-03-04 21:45:39,009 DEBUG QuerySpacesImpl [main] Adding QuerySpace : uid = <gen:1> -> org.hibernate.loader.plan.build.internal.spaces.CollectionQuerySpaceImpl@5621a671]
+2022-03-04 21:45:39,010 DEBUG QuerySpacesImpl [main] Adding QuerySpace : uid = <gen:2> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@303fbc4]
+2022-03-04 21:45:39,010 DEBUG FetchStyleLoadPlanBuildingAssociationVisitationStrategy [main] Building LoadPlan...
+2022-03-04 21:45:39,010 DEBUG LoadQueryJoinAndFetchProcessor [main] processing queryspace <gen:0>
+2022-03-04 21:45:39,010 DEBUG LoadPlanTreePrinter [main] LoadPlan(entity=dev.summer.jpa.entity.BoardEntity)
+    - Returns
+       - EntityReturnImpl(entity=dev.summer.jpa.entity.BoardEntity, querySpaceUid=<gen:0>, path=dev.summer.jpa.entity.BoardEntity)
+          - CollectionAttributeFetchImpl(collection=dev.summer.jpa.entity.BoardEntity.postEntityList, querySpaceUid=<gen:1>, path=dev.summer.jpa.entity.BoardEntity.postEntityList)
+             - (collection element) CollectionFetchableElementEntityGraph(entity=dev.summer.jpa.entity.PostEntity, querySpaceUid=<gen:2>, path=dev.summer.jpa.entity.BoardEntity.postEntityList.<elements>)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=dev.summer.jpa.entity.BoardEntity)
+          - SQL table alias mapping - boardentit0_
+          - alias suffix - 0_
+          - suffixed key columns - {id1_0_0_}
+
+2022-03-04 21:45:39,010 DEBUG EntityLoader [main] Static select for entity dev.summer.jpa.entity.BoardEntity [NONE]: select boardentit0_.id as id1_0_0_, boardentit0_.created_at as created_2_0_0_, boardentit0_.updated_at as updated_3_0_0_, boardentit0_.board_name as board_na4_0_0_ from board boardentit0_ where boardentit0_.id=?
+2022-03-04 21:45:39,013 DEBUG QuerySpacesImpl [main] Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.CollectionQuerySpaceImpl@4ebed2b3]
+2022-03-04 21:45:39,013 DEBUG QuerySpacesImpl [main] Adding QuerySpace : uid = <gen:1> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@11069eac]
+2022-03-04 21:45:39,014 DEBUG MetamodelGraphWalker [main] Visiting attribute path : createdAt
+2022-03-04 21:45:39,014 DEBUG MetamodelGraphWalker [main] Visiting attribute path : updatedAt
+2022-03-04 21:45:39,014 DEBUG MetamodelGraphWalker [main] Visiting attribute path : boardEntity
+2022-03-04 21:45:39,014 DEBUG MetamodelGraphWalker [main] Property path deemed to be circular : boardEntity
+2022-03-04 21:45:39,014 DEBUG MetamodelGraphWalker [main] Visiting attribute path : content
+2022-03-04 21:45:39,014 DEBUG MetamodelGraphWalker [main] Visiting attribute path : title
+2022-03-04 21:45:39,014 DEBUG MetamodelGraphWalker [main] Visiting attribute path : writer
+2022-03-04 21:45:39,014 DEBUG FetchStyleLoadPlanBuildingAssociationVisitationStrategy [main] Building LoadPlan...
+2022-03-04 21:45:39,016 DEBUG LoadQueryJoinAndFetchProcessor [main] processing queryspace <gen:0>
+2022-03-04 21:45:39,016 DEBUG LoadPlanTreePrinter [main] LoadPlan(collection=dev.summer.jpa.entity.BoardEntity.postEntityList)
+    - Returns
+       - CollectionReturnImpl(collection=dev.summer.jpa.entity.BoardEntity.postEntityList, querySpaceUid=<gen:0>, path=[dev.summer.jpa.entity.BoardEntity.postEntityList])
+          - (collection element) CollectionFetchableElementEntityGraph(entity=dev.summer.jpa.entity.PostEntity, querySpaceUid=<gen:1>, path=[dev.summer.jpa.entity.BoardEntity.postEntityList].<elements>)
+    - QuerySpaces
+       - CollectionQuerySpaceImpl(uid=<gen:0>, collection=dev.summer.jpa.entity.BoardEntity.postEntityList)
+          - SQL table alias mapping - postentity0_
+          - alias suffix - 0_
+          - suffixed key columns - {board_id7_1_0_}
+          - entity-element alias suffix - 1_
+          - 1_entity-element suffixed key columns - id1_1_1_
+          - JOIN (JoinDefinedByMetadata(elements)) : <gen:0> -> <gen:1>
+             - EntityQuerySpaceImpl(uid=<gen:1>, entity=dev.summer.jpa.entity.PostEntity)
+                - SQL table alias mapping - postentity0_
+                - alias suffix - 1_
+                - suffixed key columns - {id1_1_1_}
+
+2022-03-04 21:45:39,016 DEBUG CollectionLoader [main] Static select for collection dev.summer.jpa.entity.BoardEntity.postEntityList: select postentity0_.board_id as board_id7_1_0_, postentity0_.id as id1_1_0_, postentity0_.id as id1_1_1_, postentity0_.created_at as created_2_1_1_, postentity0_.updated_at as updated_3_1_1_, postentity0_.board_id as board_id7_1_1_, postentity0_.content as content4_1_1_, postentity0_.title as title5_1_1_, postentity0_.writer as writer6_1_1_ from post postentity0_ where postentity0_.board_id=?
+2022-03-04 21:45:39,021 DEBUG LoggingProviderImpl$JULWrapper [HikariPool-1 connection adder]  TLSHandshake: 127.0.0.1:3306, TLSv1.3, TLS_AES_256_GCM_SHA384, 2145334856
+2022-03-04 21:45:39,038 DEBUG HikariPool$PoolEntryCreator [HikariPool-1 connection adder] HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@2df58933
+2022-03-04 21:45:39,038 DEBUG HikariPool [HikariPool-1 connection adder] HikariPool-1 - After adding stats (total=10, active=0, idle=10, waiting=0)
+2022-03-04 21:45:39,042 DEBUG SqlStatementLogger [main] alter table post drop foreign key FK2t7katxxymxif93a9osshl0ns
+2022-03-04 21:45:39,083 DEBUG SqlStatementLogger [main] drop table if exists board
+2022-03-04 21:45:39,109 DEBUG SqlStatementLogger [main] drop table if exists post
+2022-03-04 21:45:39,131 DEBUG SqlStatementLogger [main] create table board (id bigint not null auto_increment, created_at datetime(6), updated_at datetime(6), board_name varchar(255), primary key (id)) engine=InnoDB
+2022-03-04 21:45:39,145 DEBUG Log$LoggerLog [RMI TCP Connection(1)-172.30.1.42] RMI TCP Connection(1)-172.30.1.42: (port 52517) op = 82
+2022-03-04 21:45:39,145 DEBUG Log$LoggerLog [RMI TCP Connection(1)-172.30.1.42] RMI TCP Connection(1)-172.30.1.42: (port 52517) op = 80
+2022-03-04 21:45:39,147 DEBUG Log$LoggerLog [RMI TCP Connection(1)-172.30.1.42] RMI TCP Connection(1)-172.30.1.42: (port 52517) op = 80
+2022-03-04 21:45:39,147 DEBUG Log$LoggerLog [RMI TCP Connection(1)-172.30.1.42] RMI TCP Connection(1)-172.30.1.42: name = "[Ljava.rmi.server.ObjID;", codebase = "", defaultLoader = jdk.internal.loader.ClassLoaders$PlatformClassLoader@2d0aa448
+2022-03-04 21:45:39,147 DEBUG Log$LoggerLog [RMI TCP Connection(1)-172.30.1.42] RMI TCP Connection(1)-172.30.1.42: name = "java.rmi.server.ObjID", codebase = "", defaultLoader = jdk.internal.loader.ClassLoaders$PlatformClassLoader@2d0aa448
+2022-03-04 21:45:39,147 DEBUG Log$LoggerLog [RMI TCP Connection(1)-172.30.1.42] RMI TCP Connection(1)-172.30.1.42: name = "java.rmi.server.UID", codebase = "", defaultLoader = jdk.internal.loader.ClassLoaders$PlatformClassLoader@2d0aa448
+2022-03-04 21:45:39,148 DEBUG Log$LoggerLog [RMI TCP Connection(1)-172.30.1.42] RMI TCP Connection(1)-172.30.1.42: name = "java.rmi.dgc.Lease", codebase = "", defaultLoader = jdk.internal.loader.ClassLoaders$PlatformClassLoader@2d0aa448
+2022-03-04 21:45:39,148 DEBUG Log$LoggerLog [RMI TCP Connection(1)-172.30.1.42] RMI TCP Connection(1)-172.30.1.42: name = "java.rmi.dgc.VMID", codebase = "", defaultLoader = jdk.internal.loader.ClassLoaders$PlatformClassLoader@2d0aa448
+2022-03-04 21:45:39,148 DEBUG Log$LoggerLog [RMI TCP Connection(1)-172.30.1.42] RMI TCP Connection(1)-172.30.1.42: name = "[B", codebase = "", defaultLoader = jdk.internal.loader.ClassLoaders$PlatformClassLoader@2d0aa448
+2022-03-04 21:45:39,148 DEBUG Log$LoggerLog [RMI TCP Connection(1)-172.30.1.42] RMI TCP Connection(1)-172.30.1.42: (port 52517) op = 84
+2022-03-04 21:45:39,149 DEBUG Log$LoggerLog [RMI TCP Connection(1)-172.30.1.42] RMI TCP Connection(1)-172.30.1.42: (port 52517) op = 80
+2022-03-04 21:45:39,149 DEBUG Log$LoggerLog [RMI TCP Connection(1)-172.30.1.42] RMI TCP Connection(1)-172.30.1.42: (port 52517) op = 80
+2022-03-04 21:45:39,149 DEBUG Log$LoggerLog [RMI TCP Connection(1)-172.30.1.42] RMI TCP Connection(1)-172.30.1.42: name = "javax.management.ObjectName", codebase = ""
+2022-03-04 21:45:39,149 DEBUG LoggingProviderImpl$JULWrapper [RMI TCP Connection(1)-172.30.1.42] connectionId=rmi://172.30.1.42  7, name=org.springframework.boot:type=Admin,name=SpringApplication, attribute=Ready
+2022-03-04 21:45:39,149 DEBUG Log$LoggerLog [RMI TCP Connection(1)-172.30.1.42] RMI TCP Connection(1)-172.30.1.42: [172.30.1.42] exception: 
+javax.management.InstanceNotFoundException: org.springframework.boot:type=Admin,name=SpringApplication
+	at java.management/com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.getMBean(DefaultMBeanServerInterceptor.java:1083)
+	at java.management/com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.getAttribute(DefaultMBeanServerInterceptor.java:637)
+	at java.management/com.sun.jmx.mbeanserver.JmxMBeanServer.getAttribute(JmxMBeanServer.java:678)
+	at java.management.rmi/javax.management.remote.rmi.RMIConnectionImpl.doOperation(RMIConnectionImpl.java:1443)
+	at java.management.rmi/javax.management.remote.rmi.RMIConnectionImpl$PrivilegedOperation.run(RMIConnectionImpl.java:1307)
+	at java.management.rmi/javax.management.remote.rmi.RMIConnectionImpl.doPrivilegedOperation(RMIConnectionImpl.java:1399)
+	at java.management.rmi/javax.management.remote.rmi.RMIConnectionImpl.getAttribute(RMIConnectionImpl.java:637)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at java.rmi/sun.rmi.server.UnicastServerRef.dispatch(UnicastServerRef.java:359)
+	at java.rmi/sun.rmi.transport.Transport$1.run(Transport.java:200)
+	at java.rmi/sun.rmi.transport.Transport$1.run(Transport.java:197)
+	at java.base/java.security.AccessController.doPrivileged(Native Method)
+	at java.rmi/sun.rmi.transport.Transport.serviceCall(Transport.java:196)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport.handleMessages(TCPTransport.java:562)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run0(TCPTransport.java:796)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.lambda$run$0(TCPTransport.java:677)
+	at java.base/java.security.AccessController.doPrivileged(Native Method)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run(TCPTransport.java:676)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+2022-03-04 21:45:39,151 DEBUG Log$LoggerLog [RMI TCP Connection(1)-172.30.1.42] RMI TCP Connection(1)-172.30.1.42: (port 52517) op = 80
+2022-03-04 21:45:39,151 DEBUG LoggingProviderImpl$JULWrapper [RMI TCP Connection(1)-172.30.1.42] [javax.management.remote.rmi.RMIConnectionImpl@1f22d5ce: connectionId=rmi://172.30.1.42  7] closing.
+2022-03-04 21:45:39,151 DEBUG LoggingProviderImpl$JULWrapper [RMI TCP Connection(1)-172.30.1.42] [javax.management.remote.rmi.RMIConnectionImpl@1f22d5ce: connectionId=rmi://172.30.1.42  7] closed.
+2022-03-04 21:45:39,158 DEBUG SqlStatementLogger [main] create table post (id bigint not null auto_increment, created_at datetime(6), updated_at datetime(6), content varchar(255), title varchar(255), writer varchar(255), board_id bigint, primary key (id)) engine=InnoDB
+2022-03-04 21:45:39,187 DEBUG SqlStatementLogger [main] alter table post add constraint FK2t7katxxymxif93a9osshl0ns foreign key (board_id) references board (id)
+2022-03-04 21:45:39,265 INFO JtaPlatformInitiator [main] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-03-04 21:45:39,266 DEBUG NamedQueryRepository [main] Checking 0 named HQL queries
+2022-03-04 21:45:39,266 DEBUG NamedQueryRepository [main] Checking 0 named SQL queries
+2022-03-04 21:45:39,270 DEBUG SessionFactoryRegistry [main] Initializing SessionFactoryRegistry : org.hibernate.internal.SessionFactoryRegistry@395197cb
+2022-03-04 21:45:39,270 DEBUG SessionFactoryRegistry [main] Registering SessionFactory: 608dc91f-a496-4d6a-90f3-a3a84dc6bb93 (<unnamed>)
+2022-03-04 21:45:39,270 DEBUG SessionFactoryRegistry [main] Not binding SessionFactory to JNDI, no JNDI name configured
+2022-03-04 21:45:39,271 INFO AbstractEntityManagerFactoryBean [main] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-03-04 21:45:39,278 DEBUG DefaultSingletonBeanRegistry [main] Creating shared instance of singleton bean 'jpaApplication'
+2022-03-04 21:45:39,281 DEBUG DefaultSingletonBeanRegistry [main] Creating shared instance of singleton bean 'demoConfig'
+2022-03-04 21:45:39,288 DEBUG PropertySourcesPropertyResolver [main] Found key 'custom.property.single' in PropertySource 'environmentProperties' with value of type String
+2022-03-04 21:45:39,291 DEBUG PropertySourcesPropertyResolver [main] Found key 'custom.property.comlist' in PropertySource 'environmentProperties' with value of type String
+2022-03-04 21:45:39,294 INFO DemoConfig [main] custom property: custom-property
+2022-03-04 21:45:39,294 INFO DemoConfig [main] comma list item: comma
+2022-03-04 21:45:39,294 INFO DemoConfig [main] comma list item: separated
+2022-03-04 21:45:39,294 INFO DemoConfig [main] comma list item: list
+2022-03-04 21:45:39,294 INFO DemoConfig [main] comma list item: to
+2022-03-04 21:45:39,294 INFO DemoConfig [main] comma list item: value
+2022-03-04 21:45:39,294 INFO DemoConfig [main] default property: default-property
+2022-03-04 21:45:39,294 DEBUG DefaultSingletonBeanRegistry [main] Creating shared instance of singleton bean 'postController'
+2022-03-04 21:45:39,298 DEBUG DefaultSingletonBeanRegistry [main] Creating shared instance of singleton bean 'postService'
+2022-03-04 21:45:39,299 DEBUG DefaultSingletonBeanRegistry [main] Creating shared instance of singleton bean 'postDao'
+2022-03-04 21:45:39,299 DEBUG DefaultSingletonBeanRegistry [main] Creating shared instance of singleton bean 'postRepository'
+2022-03-04 21:45:39,378 DEBUG DefaultSingletonBeanRegistry [main] Creating shared instance of singleton bean 'jpaMappingContext'
+2022-03-04 21:45:39,379 DEBUG JpaMetamodelMappingContextFactoryBean [main] Initializing JpaMetamodelMappingContext…
+2022-03-04 21:45:39,385 DEBUG JpaMetamodelMappingContextFactoryBean [main] Finished initializing JpaMetamodelMappingContext!
+2022-03-04 21:45:39,401 DEBUG SharedEntityManagerCreator$SharedEntityManagerInvocationHandler [main] Creating new EntityManager for shared EntityManager invocation
+2022-03-04 21:45:39,425 DEBUG StatisticsInitiator [main] Statistics initialized [enabled=false]
+2022-03-04 21:45:39,429 DEBUG SharedEntityManagerCreator$SharedEntityManagerInvocationHandler [main] Creating new EntityManager for shared EntityManager invocation
+2022-03-04 21:45:39,464 DEBUG RepositoryFactorySupport [main] Initializing repository instance for dev.summer.jpa.repository.PostRepository…
+2022-03-04 21:45:39,477 DEBUG SharedEntityManagerCreator$SharedEntityManagerInvocationHandler [main] Creating new EntityManager for shared EntityManager invocation
+2022-03-04 21:45:39,510 DEBUG NamedQuery [main] Looking up named query PostEntity.findAllByWriter
+2022-03-04 21:45:39,511 DEBUG TransactionImpl [main] On TransactionImpl creation, JpaCompliance#isJpaTransactionComplianceEnabled == false
+2022-03-04 21:45:39,512 DEBUG NamedQuery [main] Did not find named query PostEntity.findAllByWriter
+2022-03-04 21:45:39,512 DEBUG SharedEntityManagerCreator$SharedEntityManagerInvocationHandler [main] Creating new EntityManager for shared EntityManager invocation
+2022-03-04 21:45:39,542 DEBUG NamedQuery [main] Looking up named query PostEntity.findAllByWriterContaining
+2022-03-04 21:45:39,542 DEBUG TransactionImpl [main] On TransactionImpl creation, JpaCompliance#isJpaTransactionComplianceEnabled == false
+2022-03-04 21:45:39,542 DEBUG NamedQuery [main] Did not find named query PostEntity.findAllByWriterContaining
+2022-03-04 21:45:39,543 DEBUG SharedEntityManagerCreator$SharedEntityManagerInvocationHandler [main] Creating new EntityManager for shared EntityManager invocation
+2022-03-04 21:45:39,547 DEBUG NamedQuery [main] Looking up named query PostEntity.findAllByWriterAndBoardEntity
+2022-03-04 21:45:39,548 DEBUG TransactionImpl [main] On TransactionImpl creation, JpaCompliance#isJpaTransactionComplianceEnabled == false
+2022-03-04 21:45:39,548 DEBUG NamedQuery [main] Did not find named query PostEntity.findAllByWriterAndBoardEntity
+2022-03-04 21:45:39,548 DEBUG SharedEntityManagerCreator$SharedEntityManagerInvocationHandler [main] Creating new EntityManager for shared EntityManager invocation
+2022-03-04 21:45:39,550 DEBUG RepositoryFactorySupport [main] Finished creation of repository instance for dev.summer.jpa.repository.PostRepository.
+2022-03-04 21:45:39,556 DEBUG ConstructorResolver [main] Autowiring by type from bean name 'postDao' via constructor to bean named 'postRepository'
+2022-03-04 21:45:39,575 DEBUG ConstructorResolver [main] Autowiring by type from bean name 'postService' via constructor to bean named 'postDao'
+2022-03-04 21:45:39,576 DEBUG DefaultSingletonBeanRegistry [main] Creating shared instance of singleton bean 'gson'
+2022-03-04 21:45:39,657 DEBUG Log$LoggerLog [RMI TCP Connection(1)-172.30.1.42] RMI TCP Connection(1)-172.30.1.42: (port 52517) op = 82
+2022-03-04 21:45:39,664 DEBUG Log$LoggerLog [RMI TCP Connection(1)-172.30.1.42] RMI TCP Connection(1)-172.30.1.42: (port 52517) op = 80
+2022-03-04 21:45:39,671 DEBUG ConstructorResolver [main] Autowiring by type from bean name 'postController' via constructor to bean named 'postService'
+2022-03-04 21:45:39,671 DEBUG ConstructorResolver [main] Autowiring by type from bean name 'postController' via constructor to bean named 'gson'
+2022-03-04 21:45:39,671 DEBUG Log$LoggerLog [RMI TCP Connection(1)-172.30.1.42] RMI TCP Connection(1)-172.30.1.42: (port 52517) op = 80
+2022-03-04 21:45:39,672 INFO PostController [main] {serializeNulls:false,factories:[Factory[typeHierarchy=com.google.gson.JsonElement,adapter=com.google.gson.internal.bind.TypeAdapters$29@1d1deb11], com.google.gson.internal.bind.ObjectTypeAdapter$1@18d1d137, com.google.gson.internal.Excluder@5f4f6f89, Factory[type=java.lang.String,adapter=com.google.gson.internal.bind.TypeAdapters$16@7c45191e], Factory[type=java.lang.Integer+int,adapter=com.google.gson.internal.bind.TypeAdapters$7@ef220e4], Factory[type=java.lang.Boolean+boolean,adapter=com.google.gson.internal.bind.TypeAdapters$3@18bc1064], Factory[type=java.lang.Byte+byte,adapter=com.google.gson.internal.bind.TypeAdapters$5@3cab07dd], Factory[type=java.lang.Short+short,adapter=com.google.gson.internal.bind.TypeAdapters$6@68f264bf], Factory[type=java.lang.Long+long,adapter=com.google.gson.internal.bind.TypeAdapters$11@77988c45], Factory[type=java.lang.Double+double,adapter=com.google.gson.Gson$1@f5f8de2], Factory[type=java.lang.Float+float,adapter=com.google.gson.Gson$2@6baee63b], Factory[type=java.lang.Number,adapter=com.google.gson.internal.bind.TypeAdapters$14@1002b06d], Factory[type=java.util.concurrent.atomic.AtomicInteger,adapter=com.google.gson.TypeAdapter$1@234bfc8c], Factory[type=java.util.concurrent.atomic.AtomicBoolean,adapter=com.google.gson.TypeAdapter$1@5008559a], Factory[type=java.util.concurrent.atomic.AtomicLong,adapter=com.google.gson.TypeAdapter$1@4c0bfe9e], Factory[type=java.util.concurrent.atomic.AtomicLongArray,adapter=com.google.gson.TypeAdapter$1@490fbeaa], Factory[type=java.util.concurrent.atomic.AtomicIntegerArray,adapter=com.google.gson.TypeAdapter$1@35dc849b], Factory[type=java.lang.Character+char,adapter=com.google.gson.internal.bind.TypeAdapters$15@276aa33f], Factory[type=java.lang.StringBuilder,adapter=com.google.gson.internal.bind.TypeAdapters$19@34065642], Factory[type=java.lang.StringBuffer,adapter=com.google.gson.internal.bind.TypeAdapters$20@c85486], Factory[type=java.math.BigDecimal,adapter=com.google.gson.internal.bind.TypeAdapters$17@51e1e058], Factory[type=java.math.BigInteger,adapter=com.google.gson.internal.bind.TypeAdapters$18@23e0c200], Factory[type=java.net.URL,adapter=com.google.gson.internal.bind.TypeAdapters$21@25d23478], Factory[type=java.net.URI,adapter=com.google.gson.internal.bind.TypeAdapters$22@677c2820], Factory[type=java.util.UUID,adapter=com.google.gson.internal.bind.TypeAdapters$24@39c1e7b7], Factory[type=java.util.Currency,adapter=com.google.gson.TypeAdapter$1@1c14d24d], Factory[type=java.util.Locale,adapter=com.google.gson.internal.bind.TypeAdapters$28@28515443], Factory[typeHierarchy=java.net.InetAddress,adapter=com.google.gson.internal.bind.TypeAdapters$23@2eea4441], Factory[type=java.util.BitSet,adapter=com.google.gson.TypeAdapter$1@1820f274], com.google.gson.internal.bind.DateTypeAdapter$1@221cdd87, Factory[type=java.util.Calendar+java.util.GregorianCalendar,adapter=com.google.gson.internal.bind.TypeAdapters$27@4d66cb], com.google.gson.internal.bind.TimeTypeAdapter$1@7c79f2cf, com.google.gson.internal.bind.SqlDateTypeAdapter$1@63551c66, com.google.gson.internal.bind.TypeAdapters$26@2761156e, com.google.gson.internal.bind.ArrayTypeAdapter$1@4cf15477, Factory[type=java.lang.Class,adapter=com.google.gson.TypeAdapter$1@7fad28ac], com.google.gson.internal.bind.CollectionTypeAdapterFactory@3450bd13, com.google.gson.internal.bind.MapTypeAdapterFactory@1bb51492, com.google.gson.internal.bind.JsonAdapterAnnotationTypeAdapterFactory@5da1a97f, com.google.gson.internal.bind.TypeAdapters$30@4b5f022f, com.google.gson.internal.bind.ReflectiveTypeAdapterFactory@7a569672],instanceCreators:{}}
+2022-03-04 21:45:39,673 DEBUG Log$LoggerLog [RMI TCP Connection(1)-172.30.1.42] RMI TCP Connection(1)-172.30.1.42: name = "[Ljava.rmi.server.ObjID;", codebase = "", defaultLoader = jdk.internal.loader.ClassLoaders$PlatformClassLoader@2d0aa448
+2022-03-04 21:45:39,675 DEBUG Log$LoggerLog [RMI TCP Connection(1)-172.30.1.42] RMI TCP Connection(1)-172.30.1.42: name = "java.rmi.server.ObjID", codebase = "", defaultLoader = jdk.internal.loader.ClassLoaders$PlatformClassLoader@2d0aa448
+2022-03-04 21:45:39,675 DEBUG Log$LoggerLog [RMI TCP Connection(1)-172.30.1.42] RMI TCP Connection(1)-172.30.1.42: name = "java.rmi.server.UID", codebase = "", defaultLoader = jdk.internal.loader.ClassLoaders$PlatformClassLoader@2d0aa448
+2022-03-04 21:45:39,676 DEBUG Log$LoggerLog [RMI TCP Connection(1)-172.30.1.42] RMI TCP Connection(1)-172.30.1.42: name = "java.rmi.dgc.Lease", codebase = "", defaultLoader = jdk.internal.loader.ClassLoaders$PlatformClassLoader@2d0aa448
+2022-03-04 21:45:39,676 DEBUG Log$LoggerLog [RMI TCP Connection(1)-172.30.1.42] RMI TCP Connection(1)-172.30.1.42: name = "java.rmi.dgc.VMID", codebase = "", defaultLoader = jdk.internal.loader.ClassLoaders$PlatformClassLoader@2d0aa448
+2022-03-04 21:45:39,676 DEBUG Log$LoggerLog [RMI TCP Connection(1)-172.30.1.42] RMI TCP Connection(1)-172.30.1.42: name = "[B", codebase = "", defaultLoader = jdk.internal.loader.ClassLoaders$PlatformClassLoader@2d0aa448
+2022-03-04 21:45:39,679 DEBUG Log$LoggerLog [RMI TCP Connection(1)-172.30.1.42] RMI TCP Connection(1)-172.30.1.42: (port 52517) op = 84
+2022-03-04 21:45:39,680 DEBUG Log$LoggerLog [RMI TCP Connection(1)-172.30.1.42] RMI TCP Connection(1)-172.30.1.42: (port 52517) op = 80
+2022-03-04 21:45:39,680 DEBUG Log$LoggerLog [RMI TCP Connection(1)-172.30.1.42] RMI TCP Connection(1)-172.30.1.42: (port 52517) op = 80
+2022-03-04 21:45:39,681 DEBUG Log$LoggerLog [RMI TCP Connection(1)-172.30.1.42] RMI TCP Connection(1)-172.30.1.42: name = "javax.management.ObjectName", codebase = ""
+2022-03-04 21:45:39,681 DEBUG LoggingProviderImpl$JULWrapper [RMI TCP Connection(1)-172.30.1.42] connectionId=rmi://172.30.1.42  8, name=org.springframework.boot:type=Admin,name=SpringApplication, attribute=Ready
+2022-03-04 21:45:39,681 DEBUG Log$LoggerLog [RMI TCP Connection(1)-172.30.1.42] RMI TCP Connection(1)-172.30.1.42: [172.30.1.42] exception: 
+javax.management.InstanceNotFoundException: org.springframework.boot:type=Admin,name=SpringApplication
+	at java.management/com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.getMBean(DefaultMBeanServerInterceptor.java:1083)
+	at java.management/com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.getAttribute(DefaultMBeanServerInterceptor.java:637)
+	at java.management/com.sun.jmx.mbeanserver.JmxMBeanServer.getAttribute(JmxMBeanServer.java:678)
+	at java.management.rmi/javax.management.remote.rmi.RMIConnectionImpl.doOperation(RMIConnectionImpl.java:1443)
+	at java.management.rmi/javax.management.remote.rmi.RMIConnectionImpl$PrivilegedOperation.run(RMIConnectionImpl.java:1307)
+	at java.management.rmi/javax.management.remote.rmi.RMIConnectionImpl.doPrivilegedOperation(RMIConnectionImpl.java:1399)
+	at java.management.rmi/javax.management.remote.rmi.RMIConnectionImpl.getAttribute(RMIConnectionImpl.java:637)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at java.rmi/sun.rmi.server.UnicastServerRef.dispatch(UnicastServerRef.java:359)
+	at java.rmi/sun.rmi.transport.Transport$1.run(Transport.java:200)
+	at java.rmi/sun.rmi.transport.Transport$1.run(Transport.java:197)
+	at java.base/java.security.AccessController.doPrivileged(Native Method)
+	at java.rmi/sun.rmi.transport.Transport.serviceCall(Transport.java:196)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport.handleMessages(TCPTransport.java:562)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run0(TCPTransport.java:796)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.lambda$run$0(TCPTransport.java:677)
+	at java.base/java.security.AccessController.doPrivileged(Native Method)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run(TCPTransport.java:676)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+2022-03-04 21:45:39,683 DEBUG DefaultSingletonBeanRegistry [main] Creating shared instance of singleton bean 'profileComponent'
+2022-03-04 21:45:39,684 INFO ProfileComponent [main] profile component profile: local
+2022-03-04 21:45:39,684 DEBUG Log$LoggerLog [RMI TCP Connection(1)-172.30.1.42] RMI TCP Connection(1)-172.30.1.42: (port 52517) op = 80
+2022-03-04 21:45:39,685 DEBUG DefaultSingletonBeanRegistry [main] Creating shared instance of singleton bean 'jpaAuditingHandler'
+2022-03-04 21:45:39,685 DEBUG LoggingProviderImpl$JULWrapper [RMI TCP Connection(1)-172.30.1.42] [javax.management.remote.rmi.RMIConnectionImpl@4ea1d5fc: connectionId=rmi://172.30.1.42  8] closing.
+2022-03-04 21:45:39,686 DEBUG LoggingProviderImpl$JULWrapper [RMI TCP Connection(1)-172.30.1.42] [javax.management.remote.rmi.RMIConnectionImpl@4ea1d5fc: connectionId=rmi://172.30.1.42  8] closed.
+2022-03-04 21:45:39,707 DEBUG AuditingHandler [main] No AuditorAware set! Auditing will not be applied!
+2022-03-04 21:45:39,707 DEBUG DefaultSingletonBeanRegistry [main] Creating shared instance of singleton bean 'org.springframework.data.jpa.domain.support.AuditingEntityListener'
+2022-03-04 21:45:39,708 DEBUG DefaultSingletonBeanRegistry [main] Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.context.PropertyPlaceholderAutoConfiguration'
+2022-03-04 21:45:39,709 DEBUG DefaultSingletonBeanRegistry [main] Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.websocket.servlet.WebSocketServletAutoConfiguration'
+2022-03-04 21:45:39,709 DEBUG DefaultSingletonBeanRegistry [main] Creating shared instance of singleton bean 'org.springframework.boot.context.properties.EnableConfigurationPropertiesRegistrar.methodValidationExcludeFilter'
+2022-03-04 21:45:39,711 DEBUG DefaultSingletonBeanRegistry [main] Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.web.servlet.DispatcherServletAutoConfiguration'
+2022-03-04 21:45:39,711 DEBUG DefaultSingletonBeanRegistry [main] Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.task.TaskExecutionAutoConfiguration'
+2022-03-04 21:45:39,711 DEBUG DefaultSingletonBeanRegistry [main] Creating shared instance of singleton bean 'taskExecutorBuilder'
+2022-03-04 21:45:39,712 DEBUG DefaultSingletonBeanRegistry [main] Creating shared instance of singleton bean 'spring.task.execution-org.springframework.boot.autoconfigure.task.TaskExecutionProperties'
+2022-03-04 21:45:39,718 DEBUG ConstructorResolver [main] Autowiring by type from bean name 'taskExecutorBuilder' via factory method to bean named 'spring.task.execution-org.springframework.boot.autoconfigure.task.TaskExecutionProperties'
+2022-03-04 21:45:39,720 DEBUG DefaultSingletonBeanRegistry [main] Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.web.servlet.error.ErrorMvcAutoConfiguration$WhitelabelErrorViewConfiguration'
+2022-03-04 21:45:39,721 DEBUG DefaultSingletonBeanRegistry [main] Creating shared instance of singleton bean 'error'
+2022-03-04 21:45:39,721 DEBUG DefaultSingletonBeanRegistry [main] Creating shared instance of singleton bean 'beanNameViewResolver'
+2022-03-04 21:45:39,722 DEBUG DefaultSingletonBeanRegistry [main] Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.web.servlet.error.ErrorMvcAutoConfiguration$DefaultErrorViewResolverConfiguration'
+2022-03-04 21:45:39,722 DEBUG DefaultSingletonBeanRegistry [main] Creating shared instance of singleton bean 'spring.resources-org.springframework.boot.autoconfigure.web.ResourceProperties'
+2022-03-04 21:45:39,726 DEBUG DefaultSingletonBeanRegistry [main] Creating shared instance of singleton bean 'spring.web-org.springframework.boot.autoconfigure.web.WebProperties'
+2022-03-04 21:45:39,727 DEBUG ConstructorResolver [main] Autowiring by type from bean name 'org.springframework.boot.autoconfigure.web.servlet.error.ErrorMvcAutoConfiguration$DefaultErrorViewResolverConfiguration' via constructor to bean named 'org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@f19c9d2'
+2022-03-04 21:45:39,727 DEBUG ConstructorResolver [main] Autowiring by type from bean name 'org.springframework.boot.autoconfigure.web.servlet.error.ErrorMvcAutoConfiguration$DefaultErrorViewResolverConfiguration' via constructor to bean named 'spring.resources-org.springframework.boot.autoconfigure.web.ResourceProperties'
+2022-03-04 21:45:39,727 DEBUG ConstructorResolver [main] Autowiring by type from bean name 'org.springframework.boot.autoconfigure.web.servlet.error.ErrorMvcAutoConfiguration$DefaultErrorViewResolverConfiguration' via constructor to bean named 'spring.web-org.springframework.boot.autoconfigure.web.WebProperties'
+2022-03-04 21:45:39,727 DEBUG DefaultSingletonBeanRegistry [main] Creating shared instance of singleton bean 'conventionErrorViewResolver'
+2022-03-04 21:45:39,728 DEBUG DefaultSingletonBeanRegistry [main] Creating shared instance of singleton bean 'errorAttributes'
+2022-03-04 21:45:39,729 DEBUG DefaultSingletonBeanRegistry [main] Creating shared instance of singleton bean 'basicErrorController'
+2022-03-04 21:45:39,729 DEBUG ConstructorResolver [main] Autowiring by type from bean name 'basicErrorController' via factory method to bean named 'errorAttributes'
+2022-03-04 21:45:39,737 DEBUG DefaultSingletonBeanRegistry [main] Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.web.servlet.WebMvcAutoConfiguration$EnableWebMvcConfiguration'
+2022-03-04 21:45:39,738 DEBUG ConstructorResolver [main] Autowiring by type from bean name 'org.springframework.boot.autoconfigure.web.servlet.WebMvcAutoConfiguration$EnableWebMvcConfiguration' via constructor to bean named 'spring.resources-org.springframework.boot.autoconfigure.web.ResourceProperties'
+2022-03-04 21:45:39,738 DEBUG ConstructorResolver [main] Autowiring by type from bean name 'org.springframework.boot.autoconfigure.web.servlet.WebMvcAutoConfiguration$EnableWebMvcConfiguration' via constructor to bean named 'spring.mvc-org.springframework.boot.autoconfigure.web.servlet.WebMvcProperties'
+2022-03-04 21:45:39,738 DEBUG ConstructorResolver [main] Autowiring by type from bean name 'org.springframework.boot.autoconfigure.web.servlet.WebMvcAutoConfiguration$EnableWebMvcConfiguration' via constructor to bean named 'spring.web-org.springframework.boot.autoconfigure.web.WebProperties'
+2022-03-04 21:45:39,738 DEBUG ConstructorResolver [main] Autowiring by type from bean name 'org.springframework.boot.autoconfigure.web.servlet.WebMvcAutoConfiguration$EnableWebMvcConfiguration' via constructor to bean named 'org.springframework.beans.factory.support.DefaultListableBeanFactory@75201592'
+2022-03-04 21:45:39,746 DEBUG DefaultSingletonBeanRegistry [main] Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.web.servlet.WebMvcAutoConfiguration$WebMvcAutoConfigurationAdapter'
+2022-03-04 21:45:39,747 DEBUG ConstructorResolver [main] Autowiring by type from bean name 'org.springframework.boot.autoconfigure.web.servlet.WebMvcAutoConfiguration$WebMvcAutoConfigurationAdapter' via constructor to bean named 'spring.resources-org.springframework.boot.autoconfigure.web.ResourceProperties'
+2022-03-04 21:45:39,747 DEBUG ConstructorResolver [main] Autowiring by type from bean name 'org.springframework.boot.autoconfigure.web.servlet.WebMvcAutoConfiguration$WebMvcAutoConfigurationAdapter' via constructor to bean named 'spring.web-org.springframework.boot.autoconfigure.web.WebProperties'
+2022-03-04 21:45:39,747 DEBUG ConstructorResolver [main] Autowiring by type from bean name 'org.springframework.boot.autoconfigure.web.servlet.WebMvcAutoConfiguration$WebMvcAutoConfigurationAdapter' via constructor to bean named 'spring.mvc-org.springframework.boot.autoconfigure.web.servlet.WebMvcProperties'
+2022-03-04 21:45:39,747 DEBUG ConstructorResolver [main] Autowiring by type from bean name 'org.springframework.boot.autoconfigure.web.servlet.WebMvcAutoConfiguration$WebMvcAutoConfigurationAdapter' via constructor to bean named 'org.springframework.beans.factory.support.DefaultListableBeanFactory@75201592'
+2022-03-04 21:45:39,749 DEBUG DefaultSingletonBeanRegistry [main] Creating shared instance of singleton bean 'openEntityManagerInViewInterceptorConfigurer'
+2022-03-04 21:45:39,749 DEBUG DefaultSingletonBeanRegistry [main] Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration'
+2022-03-04 21:45:39,749 DEBUG ConstructorResolver [main] Autowiring by type from bean name 'org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration' via constructor to bean named 'spring.jpa-org.springframework.boot.autoconfigure.orm.jpa.JpaProperties'
+2022-03-04 21:45:39,750 DEBUG DefaultSingletonBeanRegistry [main] Creating shared instance of singleton bean 'openEntityManagerInViewInterceptor'
+2022-03-04 21:45:39,750 WARN JpaBaseConfiguration$JpaWebConfiguration [main] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-03-04 21:45:39,751 DEBUG ConstructorResolver [main] Autowiring by type from bean name 'openEntityManagerInViewInterceptorConfigurer' via factory method to bean named 'openEntityManagerInViewInterceptor'
+2022-03-04 21:45:39,752 DEBUG DefaultSingletonBeanRegistry [main] Creating shared instance of singleton bean 'org.springframework.data.web.config.SpringDataWebConfiguration'
+2022-03-04 21:45:39,753 DEBUG ConstructorResolver [main] Autowiring by type from bean name 'org.springframework.data.web.config.SpringDataWebConfiguration' via constructor to bean named 'org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@f19c9d2'
+2022-03-04 21:45:39,756 DEBUG DefaultSingletonBeanRegistry [main] Creating shared instance of singleton bean 'requestMappingHandlerAdapter'
+2022-03-04 21:45:39,758 DEBUG DefaultSingletonBeanRegistry [main] Creating shared instance of singleton bean 'mvcContentNegotiationManager'
+2022-03-04 21:45:39,768 DEBUG DefaultSingletonBeanRegistry [main] Creating shared instance of singleton bean 'mvcConversionService'
+2022-03-04 21:45:39,775 DEBUG DefaultSingletonBeanRegistry [main] Creating shared instance of singleton bean 'mvcValidator'
+2022-03-04 21:45:39,775 DEBUG ConstructorResolver [main] Autowiring by type from bean name 'requestMappingHandlerAdapter' via factory method to bean named 'mvcContentNegotiationManager'
+2022-03-04 21:45:39,775 DEBUG ConstructorResolver [main] Autowiring by type from bean name 'requestMappingHandlerAdapter' via factory method to bean named 'mvcConversionService'
+2022-03-04 21:45:39,776 DEBUG ConstructorResolver [main] Autowiring by type from bean name 'requestMappingHandlerAdapter' via factory method to bean named 'mvcValidator'
+2022-03-04 21:45:39,776 DEBUG ConstructorResolver [main] Autowiring by type from bean name 'requestMappingHandlerAdapter' via factory method to bean named 'mvcContentNegotiationManager'
+2022-03-04 21:45:39,776 DEBUG ConstructorResolver [main] Autowiring by type from bean name 'requestMappingHandlerAdapter' via factory method to bean named 'mvcConversionService'
+2022-03-04 21:45:39,776 DEBUG ConstructorResolver [main] Autowiring by type from bean name 'requestMappingHandlerAdapter' via factory method to bean named 'mvcValidator'
+2022-03-04 21:45:39,780 DEBUG DefaultSingletonBeanRegistry [main] Creating shared instance of singleton bean 'messageConverters'
+2022-03-04 21:45:39,780 DEBUG DefaultSingletonBeanRegistry [main] Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.http.HttpMessageConvertersAutoConfiguration'
+2022-03-04 21:45:39,787 DEBUG DefaultSingletonBeanRegistry [main] Creating shared instance of singleton bean 'stringHttpMessageConverter'
+2022-03-04 21:45:39,787 DEBUG DefaultSingletonBeanRegistry [main] Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.http.HttpMessageConvertersAutoConfiguration$StringHttpMessageConverterConfiguration'
+2022-03-04 21:45:39,787 DEBUG ConstructorResolver [main] Autowiring by type from bean name 'stringHttpMessageConverter' via factory method to bean named 'environment'
+2022-03-04 21:45:39,792 DEBUG DefaultSingletonBeanRegistry [main] Creating shared instance of singleton bean 'mappingJackson2HttpMessageConverter'
+2022-03-04 21:45:39,792 DEBUG DefaultSingletonBeanRegistry [main] Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.http.JacksonHttpMessageConvertersConfiguration$MappingJackson2HttpMessageConverterConfiguration'
+2022-03-04 21:45:39,792 DEBUG DefaultSingletonBeanRegistry [main] Creating shared instance of singleton bean 'jacksonObjectMapper'
+2022-03-04 21:45:39,792 DEBUG DefaultSingletonBeanRegistry [main] Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration$JacksonObjectMapperConfiguration'
+2022-03-04 21:45:39,793 DEBUG DefaultSingletonBeanRegistry [main] Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration$JacksonObjectMapperBuilderConfiguration'
+2022-03-04 21:45:39,795 DEBUG DefaultSingletonBeanRegistry [main] Creating shared instance of singleton bean 'standardJacksonObjectMapperBuilderCustomizer'
+2022-03-04 21:45:39,795 DEBUG DefaultSingletonBeanRegistry [main] Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration$Jackson2ObjectMapperBuilderCustomizerConfiguration'
+2022-03-04 21:45:39,795 DEBUG DefaultSingletonBeanRegistry [main] Creating shared instance of singleton bean 'spring.jackson-org.springframework.boot.autoconfigure.jackson.JacksonProperties'
+2022-03-04 21:45:39,797 DEBUG ConstructorResolver [main] Autowiring by type from bean name 'standardJacksonObjectMapperBuilderCustomizer' via factory method to bean named 'org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@f19c9d2'
+2022-03-04 21:45:39,797 DEBUG ConstructorResolver [main] Autowiring by type from bean name 'standardJacksonObjectMapperBuilderCustomizer' via factory method to bean named 'spring.jackson-org.springframework.boot.autoconfigure.jackson.JacksonProperties'
+2022-03-04 21:45:39,798 DEBUG ConstructorResolver [main] Autowiring by type from bean name 'jacksonObjectMapperBuilder' via factory method to bean named 'org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@f19c9d2'
+2022-03-04 21:45:39,798 DEBUG ConstructorResolver [main] Autowiring by type from bean name 'jacksonObjectMapperBuilder' via factory method to bean named 'standardJacksonObjectMapperBuilderCustomizer'
+2022-03-04 21:45:39,799 DEBUG DefaultSingletonBeanRegistry [main] Creating shared instance of singleton bean 'parameterNamesModule'
+2022-03-04 21:45:39,802 DEBUG DefaultSingletonBeanRegistry [main] Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration$ParameterNamesModuleConfiguration'
+2022-03-04 21:45:39,809 DEBUG DefaultSingletonBeanRegistry [main] Creating shared instance of singleton bean 'jsonComponentModule'
+2022-03-04 21:45:39,810 DEBUG DefaultSingletonBeanRegistry [main] Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration'
+2022-03-04 21:45:39,813 DEBUG DefaultSingletonBeanRegistry [main] Creating shared instance of singleton bean 'jacksonGeoModule'
+2022-03-04 21:45:39,814 DEBUG DefaultSingletonBeanRegistry [main] Creating shared instance of singleton bean 'org.springframework.data.web.config.SpringDataJacksonConfiguration'
+2022-03-04 21:45:39,817 DEBUG ConstructorResolver [main] Autowiring by type from bean name 'jacksonObjectMapper' via factory method to bean named 'jacksonObjectMapperBuilder'
+2022-03-04 21:45:39,834 DEBUG ConstructorResolver [main] Autowiring by type from bean name 'mappingJackson2HttpMessageConverter' via factory method to bean named 'jacksonObjectMapper'
+2022-03-04 21:45:39,841 DEBUG DefaultSingletonBeanRegistry [main] Creating shared instance of singleton bean 'sortResolver'
+2022-03-04 21:45:39,842 DEBUG DefaultSingletonBeanRegistry [main] Creating shared instance of singleton bean 'sortCustomizer'
+2022-03-04 21:45:39,842 DEBUG DefaultSingletonBeanRegistry [main] Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.data.web.SpringDataWebAutoConfiguration'
+2022-03-04 21:45:39,842 DEBUG DefaultSingletonBeanRegistry [main] Creating shared instance of singleton bean 'spring.data.web-org.springframework.boot.autoconfigure.data.web.SpringDataWebProperties'
+2022-03-04 21:45:39,843 DEBUG ConstructorResolver [main] Autowiring by type from bean name 'org.springframework.boot.autoconfigure.data.web.SpringDataWebAutoConfiguration' via constructor to bean named 'spring.data.web-org.springframework.boot.autoconfigure.data.web.SpringDataWebProperties'
+2022-03-04 21:45:39,846 DEBUG DefaultSingletonBeanRegistry [main] Creating shared instance of singleton bean 'pageableResolver'
+2022-03-04 21:45:39,846 DEBUG DefaultSingletonBeanRegistry [main] Creating shared instance of singleton bean 'pageableCustomizer'
+2022-03-04 21:45:39,848 DEBUG DefaultSingletonBeanRegistry [main] Creating shared instance of singleton bean 'applicationTaskExecutor'
+2022-03-04 21:45:39,848 DEBUG ConstructorResolver [main] Autowiring by type from bean name 'applicationTaskExecutor' via factory method to bean named 'taskExecutorBuilder'
+2022-03-04 21:45:39,851 DEBUG ExecutorConfigurationSupport [main] Initializing ExecutorService 'applicationTaskExecutor'
+2022-03-04 21:45:39,858 DEBUG RequestMappingHandlerAdapter [main] ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2022-03-04 21:45:39,866 DEBUG DefaultSingletonBeanRegistry [main] Creating shared instance of singleton bean 'requestMappingHandlerMapping'
+2022-03-04 21:45:39,867 DEBUG DefaultSingletonBeanRegistry [main] Creating shared instance of singleton bean 'mvcResourceUrlProvider'
+2022-03-04 21:45:39,870 DEBUG ConstructorResolver [main] Autowiring by type from bean name 'requestMappingHandlerMapping' via factory method to bean named 'mvcContentNegotiationManager'
+2022-03-04 21:45:39,870 DEBUG ConstructorResolver [main] Autowiring by type from bean name 'requestMappingHandlerMapping' via factory method to bean named 'mvcConversionService'
+2022-03-04 21:45:39,870 DEBUG ConstructorResolver [main] Autowiring by type from bean name 'requestMappingHandlerMapping' via factory method to bean named 'mvcResourceUrlProvider'
+2022-03-04 21:45:39,871 DEBUG ConstructorResolver [main] Autowiring by type from bean name 'requestMappingHandlerMapping' via factory method to bean named 'mvcContentNegotiationManager'
+2022-03-04 21:45:39,871 DEBUG ConstructorResolver [main] Autowiring by type from bean name 'requestMappingHandlerMapping' via factory method to bean named 'mvcConversionService'
+2022-03-04 21:45:39,871 DEBUG ConstructorResolver [main] Autowiring by type from bean name 'requestMappingHandlerMapping' via factory method to bean named 'mvcResourceUrlProvider'
+2022-03-04 21:45:39,902 DEBUG AbstractHandlerMethodMapping [main] 
+	d.s.j.PostController:
+	{GET [/post]}: readPostAll()
+	{POST [/post]}: createPost(PostDto)
+	{GET [/post/{id}]}: readPost(int)
+	{PUT [/post/{id}]}: updatePost(int,PostDto)
+	{DELETE [/post/{id}]}: deletePost(int)
+	{GET [/post/test-log]}: testlog()
+2022-03-04 21:45:39,912 DEBUG AbstractHandlerMethodMapping [main] 
+	o.s.b.a.w.s.e.BasicErrorController:
+	{ [/error], produces [text/html]}: errorHtml(HttpServletRequest,HttpServletResponse)
+	{ [/error]}: error(HttpServletRequest)
+2022-03-04 21:45:39,914 DEBUG AbstractHandlerMethodMapping [main] 8 mappings in 'requestMappingHandlerMapping'
+2022-03-04 21:45:39,915 DEBUG DefaultSingletonBeanRegistry [main] Creating shared instance of singleton bean 'welcomePageHandlerMapping'
+2022-03-04 21:45:39,916 DEBUG ConstructorResolver [main] Autowiring by type from bean name 'welcomePageHandlerMapping' via factory method to bean named 'org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@f19c9d2'
+2022-03-04 21:45:39,916 DEBUG ConstructorResolver [main] Autowiring by type from bean name 'welcomePageHandlerMapping' via factory method to bean named 'mvcConversionService'
+2022-03-04 21:45:39,916 DEBUG ConstructorResolver [main] Autowiring by type from bean name 'welcomePageHandlerMapping' via factory method to bean named 'mvcResourceUrlProvider'
+2022-03-04 21:45:39,924 DEBUG DefaultSingletonBeanRegistry [main] Creating shared instance of singleton bean 'localeResolver'
+2022-03-04 21:45:39,925 DEBUG DefaultSingletonBeanRegistry [main] Creating shared instance of singleton bean 'themeResolver'
+2022-03-04 21:45:39,926 DEBUG DefaultSingletonBeanRegistry [main] Creating shared instance of singleton bean 'flashMapManager'
+2022-03-04 21:45:39,929 DEBUG DefaultSingletonBeanRegistry [main] Creating shared instance of singleton bean 'mvcPatternParser'
+2022-03-04 21:45:39,929 DEBUG DefaultSingletonBeanRegistry [main] Creating shared instance of singleton bean 'mvcUrlPathHelper'
+2022-03-04 21:45:39,930 DEBUG DefaultSingletonBeanRegistry [main] Creating shared instance of singleton bean 'mvcPathMatcher'
+2022-03-04 21:45:39,931 DEBUG DefaultSingletonBeanRegistry [main] Creating shared instance of singleton bean 'viewControllerHandlerMapping'
+2022-03-04 21:45:39,932 DEBUG ConstructorResolver [main] Autowiring by type from bean name 'viewControllerHandlerMapping' via factory method to bean named 'mvcConversionService'
+2022-03-04 21:45:39,932 DEBUG ConstructorResolver [main] Autowiring by type from bean name 'viewControllerHandlerMapping' via factory method to bean named 'mvcResourceUrlProvider'
+2022-03-04 21:45:39,932 DEBUG DefaultSingletonBeanRegistry [main] Creating shared instance of singleton bean 'beanNameHandlerMapping'
+2022-03-04 21:45:39,932 DEBUG ConstructorResolver [main] Autowiring by type from bean name 'beanNameHandlerMapping' via factory method to bean named 'mvcConversionService'
+2022-03-04 21:45:39,932 DEBUG ConstructorResolver [main] Autowiring by type from bean name 'beanNameHandlerMapping' via factory method to bean named 'mvcResourceUrlProvider'
+2022-03-04 21:45:39,934 DEBUG AbstractDetectingUrlHandlerMapping [main] 'beanNameHandlerMapping' {}
+2022-03-04 21:45:39,936 DEBUG DefaultSingletonBeanRegistry [main] Creating shared instance of singleton bean 'routerFunctionMapping'
+2022-03-04 21:45:39,938 DEBUG ConstructorResolver [main] Autowiring by type from bean name 'routerFunctionMapping' via factory method to bean named 'mvcConversionService'
+2022-03-04 21:45:39,938 DEBUG ConstructorResolver [main] Autowiring by type from bean name 'routerFunctionMapping' via factory method to bean named 'mvcResourceUrlProvider'
+2022-03-04 21:45:39,942 DEBUG DefaultSingletonBeanRegistry [main] Creating shared instance of singleton bean 'resourceHandlerMapping'
+2022-03-04 21:45:39,943 DEBUG ConstructorResolver [main] Autowiring by type from bean name 'resourceHandlerMapping' via factory method to bean named 'mvcContentNegotiationManager'
+2022-03-04 21:45:39,943 DEBUG ConstructorResolver [main] Autowiring by type from bean name 'resourceHandlerMapping' via factory method to bean named 'mvcConversionService'
+2022-03-04 21:45:39,943 DEBUG ConstructorResolver [main] Autowiring by type from bean name 'resourceHandlerMapping' via factory method to bean named 'mvcResourceUrlProvider'
+2022-03-04 21:45:39,949 DEBUG SimpleUrlHandlerMapping [main] 'resourceHandlerMapping' {/webjars/**=ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]], /**=ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]}
+2022-03-04 21:45:39,951 DEBUG DefaultSingletonBeanRegistry [main] Creating shared instance of singleton bean 'defaultServletHandlerMapping'
+2022-03-04 21:45:39,952 DEBUG DefaultSingletonBeanRegistry [main] Creating shared instance of singleton bean 'handlerFunctionAdapter'
+2022-03-04 21:45:39,953 DEBUG DefaultSingletonBeanRegistry [main] Creating shared instance of singleton bean 'mvcUriComponentsContributor'
+2022-03-04 21:45:39,954 DEBUG ConstructorResolver [main] Autowiring by type from bean name 'mvcUriComponentsContributor' via factory method to bean named 'mvcConversionService'
+2022-03-04 21:45:39,954 DEBUG ConstructorResolver [main] Autowiring by type from bean name 'mvcUriComponentsContributor' via factory method to bean named 'requestMappingHandlerAdapter'
+2022-03-04 21:45:39,956 DEBUG DefaultSingletonBeanRegistry [main] Creating shared instance of singleton bean 'httpRequestHandlerAdapter'
+2022-03-04 21:45:39,956 DEBUG DefaultSingletonBeanRegistry [main] Creating shared instance of singleton bean 'simpleControllerHandlerAdapter'
+2022-03-04 21:45:39,956 DEBUG DefaultSingletonBeanRegistry [main] Creating shared instance of singleton bean 'handlerExceptionResolver'
+2022-03-04 21:45:39,957 DEBUG ConstructorResolver [main] Autowiring by type from bean name 'handlerExceptionResolver' via factory method to bean named 'mvcContentNegotiationManager'
+2022-03-04 21:45:39,960 DEBUG ExceptionHandlerExceptionResolver [main] ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2022-03-04 21:45:39,961 DEBUG DefaultSingletonBeanRegistry [main] Creating shared instance of singleton bean 'mvcViewResolver'
+2022-03-04 21:45:39,961 DEBUG ConstructorResolver [main] Autowiring by type from bean name 'mvcViewResolver' via factory method to bean named 'mvcContentNegotiationManager'
+2022-03-04 21:45:39,962 DEBUG DefaultSingletonBeanRegistry [main] Creating shared instance of singleton bean 'viewNameTranslator'
+2022-03-04 21:45:39,963 DEBUG DefaultSingletonBeanRegistry [main] Creating shared instance of singleton bean 'defaultViewResolver'
+2022-03-04 21:45:39,966 DEBUG DefaultSingletonBeanRegistry [main] Creating shared instance of singleton bean 'viewResolver'
+2022-03-04 21:45:39,967 DEBUG ConstructorResolver [main] Autowiring by type from bean name 'viewResolver' via factory method to bean named 'org.springframework.beans.factory.support.DefaultListableBeanFactory@75201592'
+2022-03-04 21:45:39,969 DEBUG DefaultSingletonBeanRegistry [main] Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.jmx.JmxAutoConfiguration'
+2022-03-04 21:45:39,969 DEBUG ConstructorResolver [main] Autowiring by type from bean name 'org.springframework.boot.autoconfigure.jmx.JmxAutoConfiguration' via constructor to bean named 'environment'
+2022-03-04 21:45:39,969 DEBUG DefaultSingletonBeanRegistry [main] Creating shared instance of singleton bean 'mbeanExporter'
+2022-03-04 21:45:39,970 DEBUG DefaultSingletonBeanRegistry [main] Creating shared instance of singleton bean 'objectNamingStrategy'
+2022-03-04 21:45:39,972 DEBUG ConstructorResolver [main] Autowiring by type from bean name 'mbeanExporter' via factory method to bean named 'objectNamingStrategy'
+2022-03-04 21:45:39,972 DEBUG ConstructorResolver [main] Autowiring by type from bean name 'mbeanExporter' via factory method to bean named 'org.springframework.beans.factory.support.DefaultListableBeanFactory@75201592'
+2022-03-04 21:45:39,974 DEBUG DefaultSingletonBeanRegistry [main] Creating shared instance of singleton bean 'mbeanServer'
+2022-03-04 21:45:39,975 DEBUG JmxUtils [main] Found MBeanServer: com.sun.jmx.mbeanserver.JmxMBeanServer@528931cf
+2022-03-04 21:45:39,979 DEBUG DefaultSingletonBeanRegistry [main] Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.admin.SpringApplicationAdminJmxAutoConfiguration'
+2022-03-04 21:45:39,979 DEBUG DefaultSingletonBeanRegistry [main] Creating shared instance of singleton bean 'springApplicationAdminRegistrar'
+2022-03-04 21:45:39,980 DEBUG ConstructorResolver [main] Autowiring by type from bean name 'springApplicationAdminRegistrar' via factory method to bean named 'environment'
+2022-03-04 21:45:39,987 DEBUG SpringApplicationAdminMXBeanRegistrar [main] Application Admin MBean registered with name 'org.springframework.boot:type=Admin,name=SpringApplication'
+2022-03-04 21:45:39,987 DEBUG DefaultSingletonBeanRegistry [main] Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.aop.AopAutoConfiguration$AspectJAutoProxyingConfiguration$CglibAutoProxyConfiguration'
+2022-03-04 21:45:39,988 DEBUG DefaultSingletonBeanRegistry [main] Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.aop.AopAutoConfiguration$AspectJAutoProxyingConfiguration'
+2022-03-04 21:45:39,988 DEBUG DefaultSingletonBeanRegistry [main] Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.aop.AopAutoConfiguration'
+2022-03-04 21:45:39,988 DEBUG DefaultSingletonBeanRegistry [main] Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.availability.ApplicationAvailabilityAutoConfiguration'
+2022-03-04 21:45:39,988 DEBUG DefaultSingletonBeanRegistry [main] Creating shared instance of singleton bean 'applicationAvailability'
+2022-03-04 21:45:39,989 DEBUG DefaultSingletonBeanRegistry [main] Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.transaction.jta.JtaAutoConfiguration'
+2022-03-04 21:45:39,989 DEBUG DefaultSingletonBeanRegistry [main] Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.jdbc.DataSourceJmxConfiguration$Hikari'
+2022-03-04 21:45:39,991 DEBUG ConstructorResolver [main] Autowiring by type from bean name 'org.springframework.boot.autoconfigure.jdbc.DataSourceJmxConfiguration$Hikari' via constructor to bean named 'dataSource'
+2022-03-04 21:45:39,991 DEBUG DefaultSingletonBeanRegistry [main] Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.jdbc.DataSourceJmxConfiguration'
+2022-03-04 21:45:39,991 DEBUG DefaultSingletonBeanRegistry [main] Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration$PooledDataSourceConfiguration'
+2022-03-04 21:45:39,991 DEBUG DefaultSingletonBeanRegistry [main] Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.jdbc.metadata.DataSourcePoolMetadataProvidersConfiguration'
+2022-03-04 21:45:39,991 DEBUG DefaultSingletonBeanRegistry [main] Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration'
+2022-03-04 21:45:39,992 DEBUG DefaultSingletonBeanRegistry [main] Creating shared instance of singleton bean 'transactionManager'
+2022-03-04 21:45:39,993 DEBUG DefaultSingletonBeanRegistry [main] Creating shared instance of singleton bean 'platformTransactionManagerCustomizers'
+2022-03-04 21:45:39,993 DEBUG DefaultSingletonBeanRegistry [main] Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.transaction.TransactionAutoConfiguration'
+2022-03-04 21:45:39,995 DEBUG DefaultSingletonBeanRegistry [main] Creating shared instance of singleton bean 'spring.transaction-org.springframework.boot.autoconfigure.transaction.TransactionProperties'

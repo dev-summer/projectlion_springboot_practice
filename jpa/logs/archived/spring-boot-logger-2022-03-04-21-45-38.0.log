@@ -1,0 +1,344 @@
+2022-03-04 21:45:38,000 DEBUG DefaultIdentifierGeneratorFactory [main] Registering IdentifierGenerator strategy [uuid] -> [org.hibernate.id.UUIDHexGenerator]
+2022-03-04 21:45:38,001 DEBUG DefaultIdentifierGeneratorFactory [main] Registering IdentifierGenerator strategy [uuid.hex] -> [org.hibernate.id.UUIDHexGenerator]
+2022-03-04 21:45:38,002 DEBUG DefaultIdentifierGeneratorFactory [main] Registering IdentifierGenerator strategy [assigned] -> [org.hibernate.id.Assigned]
+2022-03-04 21:45:38,002 DEBUG DefaultIdentifierGeneratorFactory [main] Registering IdentifierGenerator strategy [identity] -> [org.hibernate.id.IdentityGenerator]
+2022-03-04 21:45:38,002 DEBUG DefaultIdentifierGeneratorFactory [main] Registering IdentifierGenerator strategy [select] -> [org.hibernate.id.SelectGenerator]
+2022-03-04 21:45:38,003 DEBUG DefaultIdentifierGeneratorFactory [main] Registering IdentifierGenerator strategy [sequence] -> [org.hibernate.id.enhanced.SequenceStyleGenerator]
+2022-03-04 21:45:38,003 DEBUG DefaultIdentifierGeneratorFactory [main] Registering IdentifierGenerator strategy [seqhilo] -> [org.hibernate.id.SequenceHiLoGenerator]
+2022-03-04 21:45:38,004 DEBUG DefaultIdentifierGeneratorFactory [main] Registering IdentifierGenerator strategy [increment] -> [org.hibernate.id.IncrementGenerator]
+2022-03-04 21:45:38,004 DEBUG DefaultIdentifierGeneratorFactory [main] Registering IdentifierGenerator strategy [foreign] -> [org.hibernate.id.ForeignGenerator]
+2022-03-04 21:45:38,004 DEBUG DefaultIdentifierGeneratorFactory [main] Registering IdentifierGenerator strategy [sequence-identity] -> [org.hibernate.id.SequenceIdentityGenerator]
+2022-03-04 21:45:38,004 DEBUG DefaultIdentifierGeneratorFactory [main] Registering IdentifierGenerator strategy [enhanced-sequence] -> [org.hibernate.id.enhanced.SequenceStyleGenerator]
+2022-03-04 21:45:38,004 DEBUG DefaultIdentifierGeneratorFactory [main] Registering IdentifierGenerator strategy [enhanced-table] -> [org.hibernate.id.enhanced.TableGenerator]
+2022-03-04 21:45:38,007 DEBUG HikariConfig [main] HikariPool-1 - configuration:
+2022-03-04 21:45:38,009 DEBUG HikariConfig [main] allowPoolSuspension................................false
+2022-03-04 21:45:38,009 DEBUG HikariConfig [main] autoCommit................................true
+2022-03-04 21:45:38,009 DEBUG HikariConfig [main] catalog................................none
+2022-03-04 21:45:38,010 DEBUG HikariConfig [main] connectionInitSql................................none
+2022-03-04 21:45:38,010 DEBUG HikariConfig [main] connectionTestQuery................................none
+2022-03-04 21:45:38,010 DEBUG HikariConfig [main] connectionTimeout................................30000
+2022-03-04 21:45:38,010 DEBUG HikariConfig [main] dataSource................................none
+2022-03-04 21:45:38,010 DEBUG HikariConfig [main] dataSourceClassName................................none
+2022-03-04 21:45:38,010 DEBUG HikariConfig [main] dataSourceJNDI................................none
+2022-03-04 21:45:38,011 DEBUG HikariConfig [main] dataSourceProperties................................{password=<masked>}
+2022-03-04 21:45:38,011 DEBUG HikariConfig [main] driverClassName................................"com.mysql.cj.jdbc.Driver"
+2022-03-04 21:45:38,011 DEBUG HikariConfig [main] exceptionOverrideClassName................................none
+2022-03-04 21:45:38,011 DEBUG HikariConfig [main] healthCheckProperties................................{}
+2022-03-04 21:45:38,011 DEBUG HikariConfig [main] healthCheckRegistry................................none
+2022-03-04 21:45:38,011 DEBUG HikariConfig [main] idleTimeout................................600000
+2022-03-04 21:45:38,011 DEBUG HikariConfig [main] initializationFailTimeout................................1
+2022-03-04 21:45:38,011 DEBUG HikariConfig [main] isolateInternalQueries................................false
+2022-03-04 21:45:38,012 DEBUG HikariConfig [main] jdbcUrl................................jdbc:mysql://127.0.0.1:3306/demo_jpa_schema
+2022-03-04 21:45:38,012 DEBUG HikariConfig [main] keepaliveTime................................0
+2022-03-04 21:45:38,012 DEBUG HikariConfig [main] leakDetectionThreshold................................0
+2022-03-04 21:45:38,012 DEBUG HikariConfig [main] maxLifetime................................1800000
+2022-03-04 21:45:38,012 DEBUG HikariConfig [main] maximumPoolSize................................10
+2022-03-04 21:45:38,012 DEBUG HikariConfig [main] metricRegistry................................none
+2022-03-04 21:45:38,012 DEBUG HikariConfig [main] metricsTrackerFactory................................none
+2022-03-04 21:45:38,012 DEBUG HikariConfig [main] minimumIdle................................10
+2022-03-04 21:45:38,012 DEBUG HikariConfig [main] password................................<masked>
+2022-03-04 21:45:38,012 DEBUG HikariConfig [main] poolName................................"HikariPool-1"
+2022-03-04 21:45:38,012 DEBUG HikariConfig [main] readOnly................................false
+2022-03-04 21:45:38,012 DEBUG HikariConfig [main] registerMbeans................................false
+2022-03-04 21:45:38,012 DEBUG HikariConfig [main] scheduledExecutor................................none
+2022-03-04 21:45:38,012 DEBUG HikariConfig [main] schema................................none
+2022-03-04 21:45:38,012 DEBUG HikariConfig [main] threadFactory................................internal
+2022-03-04 21:45:38,013 DEBUG HikariConfig [main] transactionIsolation................................default
+2022-03-04 21:45:38,013 DEBUG HikariConfig [main] username................................"demo_jpa"
+2022-03-04 21:45:38,013 DEBUG HikariConfig [main] validationTimeout................................5000
+2022-03-04 21:45:38,013 INFO HikariDataSource [main] HikariPool-1 - Starting...
+2022-03-04 21:45:38,112 DEBUG Log$LoggerLog [RMI TCP Connection(1)-172.30.1.42] RMI TCP Connection(1)-172.30.1.42: (port 52517) op = 82
+2022-03-04 21:45:38,113 DEBUG Log$LoggerLog [RMI TCP Connection(1)-172.30.1.42] RMI TCP Connection(1)-172.30.1.42: (port 52517) op = 80
+2022-03-04 21:45:38,116 DEBUG Log$LoggerLog [RMI TCP Connection(1)-172.30.1.42] RMI TCP Connection(1)-172.30.1.42: (port 52517) op = 80
+2022-03-04 21:45:38,116 DEBUG Log$LoggerLog [RMI TCP Connection(1)-172.30.1.42] RMI TCP Connection(1)-172.30.1.42: name = "[Ljava.rmi.server.ObjID;", codebase = "", defaultLoader = jdk.internal.loader.ClassLoaders$PlatformClassLoader@2d0aa448
+2022-03-04 21:45:38,116 DEBUG Log$LoggerLog [RMI TCP Connection(1)-172.30.1.42] RMI TCP Connection(1)-172.30.1.42: name = "java.rmi.server.ObjID", codebase = "", defaultLoader = jdk.internal.loader.ClassLoaders$PlatformClassLoader@2d0aa448
+2022-03-04 21:45:38,116 DEBUG Log$LoggerLog [RMI TCP Connection(1)-172.30.1.42] RMI TCP Connection(1)-172.30.1.42: name = "java.rmi.server.UID", codebase = "", defaultLoader = jdk.internal.loader.ClassLoaders$PlatformClassLoader@2d0aa448
+2022-03-04 21:45:38,117 DEBUG Log$LoggerLog [RMI TCP Connection(1)-172.30.1.42] RMI TCP Connection(1)-172.30.1.42: name = "java.rmi.dgc.Lease", codebase = "", defaultLoader = jdk.internal.loader.ClassLoaders$PlatformClassLoader@2d0aa448
+2022-03-04 21:45:38,117 DEBUG Log$LoggerLog [RMI TCP Connection(1)-172.30.1.42] RMI TCP Connection(1)-172.30.1.42: name = "java.rmi.dgc.VMID", codebase = "", defaultLoader = jdk.internal.loader.ClassLoaders$PlatformClassLoader@2d0aa448
+2022-03-04 21:45:38,117 DEBUG Log$LoggerLog [RMI TCP Connection(1)-172.30.1.42] RMI TCP Connection(1)-172.30.1.42: name = "[B", codebase = "", defaultLoader = jdk.internal.loader.ClassLoaders$PlatformClassLoader@2d0aa448
+2022-03-04 21:45:38,117 DEBUG Log$LoggerLog [RMI TCP Connection(1)-172.30.1.42] RMI TCP Connection(1)-172.30.1.42: (port 52517) op = 84
+2022-03-04 21:45:38,118 DEBUG Log$LoggerLog [RMI TCP Connection(1)-172.30.1.42] RMI TCP Connection(1)-172.30.1.42: (port 52517) op = 80
+2022-03-04 21:45:38,118 DEBUG Log$LoggerLog [RMI TCP Connection(1)-172.30.1.42] RMI TCP Connection(1)-172.30.1.42: (port 52517) op = 80
+2022-03-04 21:45:38,118 DEBUG Log$LoggerLog [RMI TCP Connection(1)-172.30.1.42] RMI TCP Connection(1)-172.30.1.42: name = "javax.management.ObjectName", codebase = ""
+2022-03-04 21:45:38,119 DEBUG LoggingProviderImpl$JULWrapper [RMI TCP Connection(1)-172.30.1.42] connectionId=rmi://172.30.1.42  5, name=org.springframework.boot:type=Admin,name=SpringApplication, attribute=Ready
+2022-03-04 21:45:38,119 DEBUG Log$LoggerLog [RMI TCP Connection(1)-172.30.1.42] RMI TCP Connection(1)-172.30.1.42: [172.30.1.42] exception: 
+javax.management.InstanceNotFoundException: org.springframework.boot:type=Admin,name=SpringApplication
+	at java.management/com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.getMBean(DefaultMBeanServerInterceptor.java:1083)
+	at java.management/com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.getAttribute(DefaultMBeanServerInterceptor.java:637)
+	at java.management/com.sun.jmx.mbeanserver.JmxMBeanServer.getAttribute(JmxMBeanServer.java:678)
+	at java.management.rmi/javax.management.remote.rmi.RMIConnectionImpl.doOperation(RMIConnectionImpl.java:1443)
+	at java.management.rmi/javax.management.remote.rmi.RMIConnectionImpl$PrivilegedOperation.run(RMIConnectionImpl.java:1307)
+	at java.management.rmi/javax.management.remote.rmi.RMIConnectionImpl.doPrivilegedOperation(RMIConnectionImpl.java:1399)
+	at java.management.rmi/javax.management.remote.rmi.RMIConnectionImpl.getAttribute(RMIConnectionImpl.java:637)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at java.rmi/sun.rmi.server.UnicastServerRef.dispatch(UnicastServerRef.java:359)
+	at java.rmi/sun.rmi.transport.Transport$1.run(Transport.java:200)
+	at java.rmi/sun.rmi.transport.Transport$1.run(Transport.java:197)
+	at java.base/java.security.AccessController.doPrivileged(Native Method)
+	at java.rmi/sun.rmi.transport.Transport.serviceCall(Transport.java:196)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport.handleMessages(TCPTransport.java:562)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run0(TCPTransport.java:796)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.lambda$run$0(TCPTransport.java:677)
+	at java.base/java.security.AccessController.doPrivileged(Native Method)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run(TCPTransport.java:676)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+2022-03-04 21:45:38,121 DEBUG Log$LoggerLog [RMI TCP Connection(1)-172.30.1.42] RMI TCP Connection(1)-172.30.1.42: (port 52517) op = 80
+2022-03-04 21:45:38,121 DEBUG LoggingProviderImpl$JULWrapper [RMI TCP Connection(1)-172.30.1.42] [javax.management.remote.rmi.RMIConnectionImpl@5b4ecb67: connectionId=rmi://172.30.1.42  5] closing.
+2022-03-04 21:45:38,122 DEBUG LoggingProviderImpl$JULWrapper [RMI TCP Connection(1)-172.30.1.42] [javax.management.remote.rmi.RMIConnectionImpl@5b4ecb67: connectionId=rmi://172.30.1.42  5] closed.
+2022-03-04 21:45:38,328 DEBUG LoggingProviderImpl$JULWrapper [main] X509Certificate: Alg:SHA256withRSA, Serial:2, Subject:CN=MySQL_Server_8.0.28_Auto_Generated_Server_Certificate, Issuer:CN=MySQL_Server_8.0.28_Auto_Generated_CA_Certificate, Key type:RSA, Length:2048, Cert Id:2145334856, Valid from:20/02/2022, 20:50, Valid until:18/02/2032, 20:50
+2022-03-04 21:45:38,329 DEBUG LoggingProviderImpl$JULWrapper [main] X509Certificate: Alg:SHA256withRSA, Serial:1, Subject:CN=MySQL_Server_8.0.28_Auto_Generated_CA_Certificate, Issuer:CN=MySQL_Server_8.0.28_Auto_Generated_CA_Certificate, Key type:RSA, Length:2048, Cert Id:1078543447, Valid from:20/02/2022, 20:50, Valid until:18/02/2032, 20:50
+2022-03-04 21:45:38,342 DEBUG LoggingProviderImpl$JULWrapper [main]  TLSHandshake: 127.0.0.1:3306, TLSv1.3, TLS_AES_256_GCM_SHA384, 2145334856
+2022-03-04 21:45:38,393 DEBUG HikariPool [main] HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@30517a57
+2022-03-04 21:45:38,394 INFO HikariDataSource [main] HikariPool-1 - Start completed.
+2022-03-04 21:45:38,398 DEBUG JdbcEnvironmentInitiator [main] Database ->
+       name : MySQL
+    version : 8.0.28
+      major : 8
+      minor : 0
+2022-03-04 21:45:38,398 DEBUG JdbcEnvironmentInitiator [main] Driver ->
+       name : MySQL Connector/J
+    version : mysql-connector-java-8.0.28 (Revision: 7ff2161da3899f379fb3171b6538b191b1c5c7e2)
+      major : 8
+      minor : 0
+2022-03-04 21:45:38,398 DEBUG DelegatingBasicLogger [main] JDBC version : 4.2
+2022-03-04 21:45:38,405 INFO Dialect [main] HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2022-03-04 21:45:38,412 DEBUG IdentifierHelperBuilder [main] JDBC driver metadata reported database stores quoted identifiers in more than one case
+2022-03-04 21:45:38,465 DEBUG IdentifierHelperBuilder [main] IdentifierCaseStrategy for both quoted and unquoted identifiers was set to the same strategy [MIXED]; that will likely lead to problems in schema update and validation if using quoted identifiers
+2022-03-04 21:45:38,499 DEBUG HikariPool [HikariPool-1 housekeeper] HikariPool-1 - Pool stats (total=1, active=1, idle=0, waiting=0)
+2022-03-04 21:45:38,507 DEBUG Namespace [main] Created database namespace [logicalName=Name{catalog=null, schema=null}, physicalName=Name{catalog=null, schema=null}]
+2022-03-04 21:45:38,509 DEBUG TypeConfiguration [main] Scoping TypeConfiguration [org.hibernate.type.spi.TypeConfiguration@15186ce0] to MetadataBuildingContext [org.hibernate.boot.internal.MetadataBuildingContextRootImpl@745926c3]
+2022-03-04 21:45:38,529 DEBUG AnnotationMetadataSourceProcessorImpl [main] Skipping explicit MappedSuperclass dev.summer.jpa.entity.BaseEntity, the class will be discovered analyzing the implementing class
+2022-03-04 21:45:38,533 DEBUG AnnotationBinder [main] Binding entity from annotated class: dev.summer.jpa.entity.BoardEntity
+2022-03-04 21:45:38,542 DEBUG Ejb3Column [main] Binding column: Ejb3DiscriminatorColumn{logicalColumnName'DTYPE', discriminatorTypeName='string'}
+2022-03-04 21:45:38,544 DEBUG EntityBinder [main] Import with entity name BoardEntity
+2022-03-04 21:45:38,545 DEBUG EntityBinder [main] Bind entity dev.summer.jpa.entity.BoardEntity on table board
+2022-03-04 21:45:38,576 DEBUG LoggingProviderImpl$JULWrapper [HikariPool-1 connection adder]  TLSHandshake: 127.0.0.1:3306, TLSv1.3, TLS_AES_256_GCM_SHA384, 2145334856
+2022-03-04 21:45:38,589 DEBUG Ejb3Column [main] Binding column: Ejb3Column{table=org.hibernate.mapping.Table(board), mappingColumn=id, insertable=true, updatable=true, unique=false}
+2022-03-04 21:45:38,590 DEBUG ClassLoaderAccessImpl [main] Not known whether passed class name [dev.summer.jpa.entity.BoardEntity] is safe
+2022-03-04 21:45:38,590 DEBUG ClassLoaderAccessImpl [main] No temp ClassLoader provided; using live ClassLoader for loading potentially unsafe class : dev.summer.jpa.entity.BoardEntity
+2022-03-04 21:45:38,591 DEBUG PropertyBinder [main] MetadataSourceProcessor property id with lazy=false
+2022-03-04 21:45:38,592 DEBUG AbstractPropertyHolder [main] Attempting to locate auto-apply AttributeConverter for property [dev.summer.jpa.entity.BoardEntity:id]
+2022-03-04 21:45:38,593 DEBUG SimpleValueBinder [main] building SimpleValue for id
+2022-03-04 21:45:38,594 DEBUG PropertyBinder [main] Building property id
+2022-03-04 21:45:38,597 DEBUG BinderHelper [main] #makeIdGenerator(org.hibernate.mapping.SimpleValue([org.hibernate.mapping.Column(id)]), id, identity, , ...)
+2022-03-04 21:45:38,598 DEBUG Ejb3Column [main] Binding column: Ejb3Column{table=org.hibernate.mapping.Table(board), mappingColumn=created_at, insertable=true, updatable=false, unique=false}
+2022-03-04 21:45:38,598 DEBUG PropertyBinder [main] MetadataSourceProcessor property createdAt with lazy=false
+2022-03-04 21:45:38,598 DEBUG AbstractPropertyHolder [main] Attempting to locate auto-apply AttributeConverter for property [dev.summer.jpa.entity.BoardEntity:createdAt]
+2022-03-04 21:45:38,598 DEBUG SimpleValueBinder [main] building SimpleValue for createdAt
+2022-03-04 21:45:38,598 DEBUG PropertyBinder [main] Building property createdAt
+2022-03-04 21:45:38,599 DEBUG Ejb3Column [main] Binding column: Ejb3Column{table=org.hibernate.mapping.Table(board), mappingColumn=updated_at, insertable=true, updatable=true, unique=false}
+2022-03-04 21:45:38,600 DEBUG PropertyBinder [main] MetadataSourceProcessor property updatedAt with lazy=false
+2022-03-04 21:45:38,600 DEBUG AbstractPropertyHolder [main] Attempting to locate auto-apply AttributeConverter for property [dev.summer.jpa.entity.BoardEntity:updatedAt]
+2022-03-04 21:45:38,600 DEBUG SimpleValueBinder [main] building SimpleValue for updatedAt
+2022-03-04 21:45:38,600 DEBUG PropertyBinder [main] Building property updatedAt
+2022-03-04 21:45:38,601 DEBUG HikariPool$PoolEntryCreator [HikariPool-1 connection adder] HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@40c3049c
+2022-03-04 21:45:38,602 DEBUG Ejb3Column [main] Binding column: Ejb3Column{table=org.hibernate.mapping.Table(board), mappingColumn=board_name, insertable=true, updatable=true, unique=false}
+2022-03-04 21:45:38,602 DEBUG PropertyBinder [main] MetadataSourceProcessor property name with lazy=false
+2022-03-04 21:45:38,602 DEBUG AbstractPropertyHolder [main] Attempting to locate auto-apply AttributeConverter for property [dev.summer.jpa.entity.BoardEntity:name]
+2022-03-04 21:45:38,602 DEBUG SimpleValueBinder [main] building SimpleValue for name
+2022-03-04 21:45:38,602 DEBUG PropertyBinder [main] Building property name
+2022-03-04 21:45:38,603 DEBUG Ejb3Column [main] Binding column: Ejb3JoinColumn{logicalColumnName='null', referencedColumn='null', mappedBy='boardEntity'}
+2022-03-04 21:45:38,604 DEBUG Ejb3Column [main] Binding column: Ejb3Column{table=org.hibernate.mapping.Table(board), mappingColumn=post_entity_list, insertable=true, updatable=true, unique=false}
+2022-03-04 21:45:38,604 DEBUG Ejb3Column [main] Binding column: Ejb3Column{table=org.hibernate.mapping.Table(board), mappingColumn=null, insertable=true, updatable=true, unique=false}
+2022-03-04 21:45:38,610 DEBUG Ejb3Column [main] Binding column: Ejb3Column{table=org.hibernate.mapping.Table(board), mappingColumn=element, insertable=true, updatable=true, unique=false}
+2022-03-04 21:45:38,613 DEBUG Ejb3Column [main] Binding column: Ejb3Column{table=org.hibernate.mapping.Table(board), mappingColumn=post_entity_list_key, insertable=true, updatable=true, unique=false}
+2022-03-04 21:45:38,614 DEBUG Ejb3Column [main] Binding column: Ejb3JoinColumn{logicalColumnName='postEntityList_KEY', referencedColumn='null', mappedBy='null'}
+2022-03-04 21:45:38,615 DEBUG Ejb3Column [main] Binding column: Ejb3JoinColumn{logicalColumnName='null', referencedColumn='null', mappedBy='boardEntity'}
+2022-03-04 21:45:38,615 DEBUG Ejb3Column [main] Binding column: Ejb3JoinColumn{logicalColumnName='null', referencedColumn='null', mappedBy='boardEntity'}
+2022-03-04 21:45:38,615 DEBUG CollectionBinder [main] Collection role: dev.summer.jpa.entity.BoardEntity.postEntityList
+2022-03-04 21:45:38,617 DEBUG PropertyBinder [main] Building property postEntityList
+2022-03-04 21:45:38,618 DEBUG AnnotationBinder [main] Binding entity from annotated class: dev.summer.jpa.entity.PostEntity
+2022-03-04 21:45:38,618 DEBUG Ejb3Column [main] Binding column: Ejb3DiscriminatorColumn{logicalColumnName'DTYPE', discriminatorTypeName='string'}
+2022-03-04 21:45:38,618 DEBUG EntityBinder [main] Import with entity name PostEntity
+2022-03-04 21:45:38,618 DEBUG EntityBinder [main] Bind entity dev.summer.jpa.entity.PostEntity on table post
+2022-03-04 21:45:38,624 DEBUG Ejb3Column [main] Binding column: Ejb3Column{table=org.hibernate.mapping.Table(post), mappingColumn=id, insertable=true, updatable=true, unique=false}
+2022-03-04 21:45:38,625 DEBUG ClassLoaderAccessImpl [main] Not known whether passed class name [dev.summer.jpa.entity.PostEntity] is safe
+2022-03-04 21:45:38,625 DEBUG ClassLoaderAccessImpl [main] No temp ClassLoader provided; using live ClassLoader for loading potentially unsafe class : dev.summer.jpa.entity.PostEntity
+2022-03-04 21:45:38,625 DEBUG PropertyBinder [main] MetadataSourceProcessor property id with lazy=false
+2022-03-04 21:45:38,625 DEBUG AbstractPropertyHolder [main] Attempting to locate auto-apply AttributeConverter for property [dev.summer.jpa.entity.PostEntity:id]
+2022-03-04 21:45:38,625 DEBUG SimpleValueBinder [main] building SimpleValue for id
+2022-03-04 21:45:38,625 DEBUG PropertyBinder [main] Building property id
+2022-03-04 21:45:38,625 DEBUG BinderHelper [main] #makeIdGenerator(org.hibernate.mapping.SimpleValue([org.hibernate.mapping.Column(id)]), id, identity, , ...)
+2022-03-04 21:45:38,625 DEBUG Ejb3Column [main] Binding column: Ejb3Column{table=org.hibernate.mapping.Table(post), mappingColumn=created_at, insertable=true, updatable=false, unique=false}
+2022-03-04 21:45:38,625 DEBUG PropertyBinder [main] MetadataSourceProcessor property createdAt with lazy=false
+2022-03-04 21:45:38,625 DEBUG AbstractPropertyHolder [main] Attempting to locate auto-apply AttributeConverter for property [dev.summer.jpa.entity.PostEntity:createdAt]
+2022-03-04 21:45:38,625 DEBUG SimpleValueBinder [main] building SimpleValue for createdAt
+2022-03-04 21:45:38,625 DEBUG PropertyBinder [main] Building property createdAt
+2022-03-04 21:45:38,626 DEBUG Log$LoggerLog [RMI TCP Connection(1)-172.30.1.42] RMI TCP Connection(1)-172.30.1.42: (port 52517) op = 82
+2022-03-04 21:45:38,626 DEBUG Log$LoggerLog [RMI TCP Connection(1)-172.30.1.42] RMI TCP Connection(1)-172.30.1.42: (port 52517) op = 80
+2022-03-04 21:45:38,626 DEBUG Ejb3Column [main] Binding column: Ejb3Column{table=org.hibernate.mapping.Table(post), mappingColumn=updated_at, insertable=true, updatable=true, unique=false}
+2022-03-04 21:45:38,627 DEBUG Log$LoggerLog [RMI TCP Connection(1)-172.30.1.42] RMI TCP Connection(1)-172.30.1.42: (port 52517) op = 80
+2022-03-04 21:45:38,627 DEBUG Log$LoggerLog [RMI TCP Connection(1)-172.30.1.42] RMI TCP Connection(1)-172.30.1.42: name = "[Ljava.rmi.server.ObjID;", codebase = "", defaultLoader = jdk.internal.loader.ClassLoaders$PlatformClassLoader@2d0aa448
+2022-03-04 21:45:38,627 DEBUG PropertyBinder [main] MetadataSourceProcessor property updatedAt with lazy=false
+2022-03-04 21:45:38,627 DEBUG Log$LoggerLog [RMI TCP Connection(1)-172.30.1.42] RMI TCP Connection(1)-172.30.1.42: name = "java.rmi.server.ObjID", codebase = "", defaultLoader = jdk.internal.loader.ClassLoaders$PlatformClassLoader@2d0aa448
+2022-03-04 21:45:38,628 DEBUG Log$LoggerLog [RMI TCP Connection(1)-172.30.1.42] RMI TCP Connection(1)-172.30.1.42: name = "java.rmi.server.UID", codebase = "", defaultLoader = jdk.internal.loader.ClassLoaders$PlatformClassLoader@2d0aa448
+2022-03-04 21:45:38,628 DEBUG Log$LoggerLog [RMI TCP Connection(1)-172.30.1.42] RMI TCP Connection(1)-172.30.1.42: name = "java.rmi.dgc.Lease", codebase = "", defaultLoader = jdk.internal.loader.ClassLoaders$PlatformClassLoader@2d0aa448
+2022-03-04 21:45:38,628 DEBUG Log$LoggerLog [RMI TCP Connection(1)-172.30.1.42] RMI TCP Connection(1)-172.30.1.42: name = "java.rmi.dgc.VMID", codebase = "", defaultLoader = jdk.internal.loader.ClassLoaders$PlatformClassLoader@2d0aa448
+2022-03-04 21:45:38,628 DEBUG Log$LoggerLog [RMI TCP Connection(1)-172.30.1.42] RMI TCP Connection(1)-172.30.1.42: name = "[B", codebase = "", defaultLoader = jdk.internal.loader.ClassLoaders$PlatformClassLoader@2d0aa448
+2022-03-04 21:45:38,629 DEBUG AbstractPropertyHolder [main] Attempting to locate auto-apply AttributeConverter for property [dev.summer.jpa.entity.PostEntity:updatedAt]
+2022-03-04 21:45:38,629 DEBUG SimpleValueBinder [main] building SimpleValue for updatedAt
+2022-03-04 21:45:38,630 DEBUG PropertyBinder [main] Building property updatedAt
+2022-03-04 21:45:38,630 DEBUG Ejb3Column [main] Binding column: Ejb3JoinColumn{logicalColumnName='board_id', referencedColumn='', mappedBy=''}
+2022-03-04 21:45:38,630 DEBUG Ejb3Column [main] Binding column: Ejb3Column{table=org.hibernate.mapping.Table(post), mappingColumn=board_entity, insertable=true, updatable=true, unique=false}
+2022-03-04 21:45:38,631 DEBUG Log$LoggerLog [RMI TCP Connection(1)-172.30.1.42] RMI TCP Connection(1)-172.30.1.42: (port 52517) op = 84
+2022-03-04 21:45:38,631 DEBUG Log$LoggerLog [RMI TCP Connection(1)-172.30.1.42] RMI TCP Connection(1)-172.30.1.42: (port 52517) op = 80
+2022-03-04 21:45:38,631 DEBUG Log$LoggerLog [RMI TCP Connection(1)-172.30.1.42] RMI TCP Connection(1)-172.30.1.42: (port 52517) op = 80
+2022-03-04 21:45:38,631 DEBUG PropertyBinder [main] Building property boardEntity
+2022-03-04 21:45:38,632 DEBUG Log$LoggerLog [RMI TCP Connection(1)-172.30.1.42] RMI TCP Connection(1)-172.30.1.42: name = "javax.management.ObjectName", codebase = ""
+2022-03-04 21:45:38,632 DEBUG LoggingProviderImpl$JULWrapper [RMI TCP Connection(1)-172.30.1.42] connectionId=rmi://172.30.1.42  6, name=org.springframework.boot:type=Admin,name=SpringApplication, attribute=Ready
+2022-03-04 21:45:38,632 DEBUG Ejb3Column [main] Binding column: Ejb3Column{table=org.hibernate.mapping.Table(post), mappingColumn=content, insertable=true, updatable=true, unique=false}
+2022-03-04 21:45:38,632 DEBUG PropertyBinder [main] MetadataSourceProcessor property content with lazy=false
+2022-03-04 21:45:38,632 DEBUG AbstractPropertyHolder [main] Attempting to locate auto-apply AttributeConverter for property [dev.summer.jpa.entity.PostEntity:content]
+2022-03-04 21:45:38,633 DEBUG SimpleValueBinder [main] building SimpleValue for content
+2022-03-04 21:45:38,633 DEBUG PropertyBinder [main] Building property content
+2022-03-04 21:45:38,632 DEBUG Log$LoggerLog [RMI TCP Connection(1)-172.30.1.42] RMI TCP Connection(1)-172.30.1.42: [172.30.1.42] exception: 
+javax.management.InstanceNotFoundException: org.springframework.boot:type=Admin,name=SpringApplication
+	at java.management/com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.getMBean(DefaultMBeanServerInterceptor.java:1083)
+	at java.management/com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.getAttribute(DefaultMBeanServerInterceptor.java:637)
+	at java.management/com.sun.jmx.mbeanserver.JmxMBeanServer.getAttribute(JmxMBeanServer.java:678)
+	at java.management.rmi/javax.management.remote.rmi.RMIConnectionImpl.doOperation(RMIConnectionImpl.java:1443)
+	at java.management.rmi/javax.management.remote.rmi.RMIConnectionImpl$PrivilegedOperation.run(RMIConnectionImpl.java:1307)
+	at java.management.rmi/javax.management.remote.rmi.RMIConnectionImpl.doPrivilegedOperation(RMIConnectionImpl.java:1399)
+	at java.management.rmi/javax.management.remote.rmi.RMIConnectionImpl.getAttribute(RMIConnectionImpl.java:637)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at java.rmi/sun.rmi.server.UnicastServerRef.dispatch(UnicastServerRef.java:359)
+	at java.rmi/sun.rmi.transport.Transport$1.run(Transport.java:200)
+	at java.rmi/sun.rmi.transport.Transport$1.run(Transport.java:197)
+	at java.base/java.security.AccessController.doPrivileged(Native Method)
+	at java.rmi/sun.rmi.transport.Transport.serviceCall(Transport.java:196)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport.handleMessages(TCPTransport.java:562)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run0(TCPTransport.java:796)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.lambda$run$0(TCPTransport.java:677)
+	at java.base/java.security.AccessController.doPrivileged(Native Method)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run(TCPTransport.java:676)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+2022-03-04 21:45:38,633 DEBUG Ejb3Column [main] Binding column: Ejb3Column{table=org.hibernate.mapping.Table(post), mappingColumn=title, insertable=true, updatable=true, unique=false}
+2022-03-04 21:45:38,633 DEBUG PropertyBinder [main] MetadataSourceProcessor property title with lazy=false
+2022-03-04 21:45:38,633 DEBUG AbstractPropertyHolder [main] Attempting to locate auto-apply AttributeConverter for property [dev.summer.jpa.entity.PostEntity:title]
+2022-03-04 21:45:38,634 DEBUG SimpleValueBinder [main] building SimpleValue for title
+2022-03-04 21:45:38,634 DEBUG PropertyBinder [main] Building property title
+2022-03-04 21:45:38,634 DEBUG Ejb3Column [main] Binding column: Ejb3Column{table=org.hibernate.mapping.Table(post), mappingColumn=writer, insertable=true, updatable=true, unique=false}
+2022-03-04 21:45:38,634 DEBUG PropertyBinder [main] MetadataSourceProcessor property writer with lazy=false
+2022-03-04 21:45:38,634 DEBUG AbstractPropertyHolder [main] Attempting to locate auto-apply AttributeConverter for property [dev.summer.jpa.entity.PostEntity:writer]
+2022-03-04 21:45:38,634 DEBUG SimpleValueBinder [main] building SimpleValue for writer
+2022-03-04 21:45:38,634 DEBUG PropertyBinder [main] Building property writer
+2022-03-04 21:45:38,635 DEBUG SimpleValueBinder [main] Starting fillSimpleValue for id
+2022-03-04 21:45:38,636 DEBUG SimpleValueBinder [main] Starting fillSimpleValue for createdAt
+2022-03-04 21:45:38,636 DEBUG SimpleValueBinder [main] Starting fillSimpleValue for updatedAt
+2022-03-04 21:45:38,636 DEBUG SimpleValueBinder [main] Starting fillSimpleValue for name
+2022-03-04 21:45:38,636 DEBUG SimpleValueBinder [main] Starting fillSimpleValue for id
+2022-03-04 21:45:38,636 DEBUG SimpleValueBinder [main] Starting fillSimpleValue for createdAt
+2022-03-04 21:45:38,637 DEBUG SimpleValueBinder [main] Starting fillSimpleValue for updatedAt
+2022-03-04 21:45:38,638 DEBUG Log$LoggerLog [RMI TCP Connection(1)-172.30.1.42] RMI TCP Connection(1)-172.30.1.42: (port 52517) op = 80
+2022-03-04 21:45:38,638 DEBUG SimpleValueBinder [main] Starting fillSimpleValue for content
+2022-03-04 21:45:38,639 DEBUG LoggingProviderImpl$JULWrapper [RMI TCP Connection(1)-172.30.1.42] [javax.management.remote.rmi.RMIConnectionImpl@37b62963: connectionId=rmi://172.30.1.42  6] closing.
+2022-03-04 21:45:38,639 DEBUG SimpleValueBinder [main] Starting fillSimpleValue for title
+2022-03-04 21:45:38,640 DEBUG LoggingProviderImpl$JULWrapper [RMI TCP Connection(1)-172.30.1.42] [javax.management.remote.rmi.RMIConnectionImpl@37b62963: connectionId=rmi://172.30.1.42  6] closed.
+2022-03-04 21:45:38,643 DEBUG SimpleValueBinder [main] Starting fillSimpleValue for writer
+2022-03-04 21:45:38,646 DEBUG PrimaryKey [main] Forcing column [id] to be non-null as it is part of the primary key for table [board]
+2022-03-04 21:45:38,646 DEBUG PrimaryKey [main] Forcing column [id] to be non-null as it is part of the primary key for table [post]
+2022-03-04 21:45:38,647 DEBUG CollectionSecondPass [main] Second pass for collection: dev.summer.jpa.entity.BoardEntity.postEntityList
+2022-03-04 21:45:38,647 DEBUG CollectionBinder [main] Binding a OneToMany: dev.summer.jpa.entity.BoardEntity.postEntityList through a foreign key
+2022-03-04 21:45:38,648 DEBUG CollectionBinder [main] Mapping collection: dev.summer.jpa.entity.BoardEntity.postEntityList -> post
+2022-03-04 21:45:38,649 DEBUG TableBinder [main] Retrieving property dev.summer.jpa.entity.PostEntity.boardEntity
+2022-03-04 21:45:38,649 DEBUG CollectionSecondPass [main] Mapped collection key: board_id, one-to-many: dev.summer.jpa.entity.PostEntity
+2022-03-04 21:45:38,649 DEBUG InFlightMetadataCollectorImpl [main] Resolving reference to class: dev.summer.jpa.entity.BoardEntity
+2022-03-04 21:45:38,653 DEBUG InFlightMetadataCollectorImpl [main] Resolving reference to class: dev.summer.jpa.entity.BoardEntity
+2022-03-04 21:45:38,656 DEBUG LoggingProviderImpl$JULWrapper [HikariPool-1 connection adder]  TLSHandshake: 127.0.0.1:3306, TLSv1.3, TLS_AES_256_GCM_SHA384, 2145334856
+2022-03-04 21:45:38,667 DEBUG HikariPool$PoolEntryCreator [HikariPool-1 connection adder] HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@1fe0ea7
+2022-03-04 21:45:38,670 DEBUG SessionFactoryImpl [main] Building session factory
+2022-03-04 21:45:38,671 DEBUG Settings [main] SessionFactory name : null
+2022-03-04 21:45:38,671 DEBUG Settings [main] Automatic flush during beforeCompletion(): enabled
+2022-03-04 21:45:38,671 DEBUG Settings [main] Automatic session close at end of transaction: disabled
+2022-03-04 21:45:38,671 DEBUG Settings [main] Statistics: disabled
+2022-03-04 21:45:38,671 DEBUG Settings [main] Deleted entity synthetic identifier rollback: disabled
+2022-03-04 21:45:38,671 DEBUG Settings [main] Default entity-mode: pojo
+2022-03-04 21:45:38,671 DEBUG Settings [main] Check Nullability in Core (should be disabled when Bean Validation is on): enabled
+2022-03-04 21:45:38,671 DEBUG Settings [main] Allow initialization of lazy state outside session : disabled
+2022-03-04 21:45:38,672 DEBUG Settings [main] Using BatchFetchStyle : LEGACY
+2022-03-04 21:45:38,672 DEBUG Settings [main] Default batch fetch size: -1
+2022-03-04 21:45:38,672 DEBUG Settings [main] Maximum outer join fetch depth: 2
+2022-03-04 21:45:38,672 DEBUG Settings [main] Default null ordering: NONE
+2022-03-04 21:45:38,672 DEBUG Settings [main] Order SQL updates by primary key: disabled
+2022-03-04 21:45:38,672 DEBUG Settings [main] Order SQL inserts for batching: disabled
+2022-03-04 21:45:38,672 DEBUG Settings [main] multi-tenancy strategy : NONE
+2022-03-04 21:45:38,672 DEBUG Settings [main] JTA Track by Thread: enabled
+2022-03-04 21:45:38,673 DEBUG Settings [main] Query language substitutions: {}
+2022-03-04 21:45:38,674 DEBUG Settings [main] Named query checking : enabled
+2022-03-04 21:45:38,674 DEBUG Settings [main] Second-level cache: disabled
+2022-03-04 21:45:38,674 DEBUG Settings [main] Second-level query cache: disabled
+2022-03-04 21:45:38,674 DEBUG Settings [main] Second-level query cache factory: null
+2022-03-04 21:45:38,674 DEBUG Settings [main] Second-level cache region prefix: null
+2022-03-04 21:45:38,674 DEBUG Settings [main] Optimize second-level cache for minimal puts: disabled
+2022-03-04 21:45:38,674 DEBUG Settings [main] Structured second-level cache entries: disabled
+2022-03-04 21:45:38,675 DEBUG Settings [main] Second-level cache direct-reference entries: disabled
+2022-03-04 21:45:38,675 DEBUG Settings [main] Automatic eviction of collection cache: disabled
+2022-03-04 21:45:38,675 DEBUG Settings [main] JDBC batch size: 15
+2022-03-04 21:45:38,675 DEBUG Settings [main] JDBC batch updates for versioned data: enabled
+2022-03-04 21:45:38,675 DEBUG Settings [main] Scrollable result sets: enabled
+2022-03-04 21:45:38,675 DEBUG Settings [main] Wrap result sets: disabled
+2022-03-04 21:45:38,675 DEBUG Settings [main] JDBC3 getGeneratedKeys(): enabled
+2022-03-04 21:45:38,675 DEBUG Settings [main] JDBC result set fetch size: null
+2022-03-04 21:45:38,675 DEBUG Settings [main] Connection release mode: ON_CLOSE
+2022-03-04 21:45:38,675 DEBUG Settings [main] Generate SQL with comments: disabled
+2022-03-04 21:45:38,675 DEBUG Settings [main] JPA compliance - query : disabled
+2022-03-04 21:45:38,675 DEBUG Settings [main] JPA compliance - closed-handling : disabled
+2022-03-04 21:45:38,675 DEBUG Settings [main] JPA compliance - lists : disabled
+2022-03-04 21:45:38,675 DEBUG Settings [main] JPA compliance - transactions : disabled
+2022-03-04 21:45:38,708 DEBUG LoggingProviderImpl$JULWrapper [HikariPool-1 connection adder]  TLSHandshake: 127.0.0.1:3306, TLSv1.3, TLS_AES_256_GCM_SHA384, 2145334856
+2022-03-04 21:45:38,719 DEBUG CallbackBuilderLegacyImpl [main] Adding touchForUpdate as PreUpdate callback for entity dev.summer.jpa.entity.PostEntity
+2022-03-04 21:45:38,720 DEBUG CallbackBuilderLegacyImpl [main] Adding touchForCreate as PrePersist callback for entity dev.summer.jpa.entity.PostEntity
+2022-03-04 21:45:38,720 DEBUG HikariPool$PoolEntryCreator [HikariPool-1 connection adder] HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@61d1f1e8
+2022-03-04 21:45:38,721 DEBUG CallbackBuilderLegacyImpl [main] Adding touchForUpdate as PreUpdate callback for entity dev.summer.jpa.entity.BoardEntity
+2022-03-04 21:45:38,722 DEBUG CallbackBuilderLegacyImpl [main] Adding touchForCreate as PrePersist callback for entity dev.summer.jpa.entity.BoardEntity
+2022-03-04 21:45:38,728 DEBUG SessionFactoryImpl [main] Session factory constructed with filter configurations : {}
+2022-03-04 21:45:38,728 DEBUG SessionFactoryImpl [main] Instantiating session factory with properties: {gopherProxySet=false, awt.toolkit=sun.lwawt.macosx.LWCToolkit, hibernate.id.new_generator_mappings=true, java.specification.version=11, sun.cpu.isalist=, hibernate.resource.beans.container=org.springframework.orm.hibernate5.SpringBeanContainer@da5d5e1, hibernate.connection.handling_mode=DELAYED_ACQUISITION_AND_HOLD, sun.jnu.encoding=UTF-8, hibernate.dialect=org.hibernate.dialect.MySQL8Dialect, hibernate.implicit_naming_strategy=org.springframework.boot.orm.jpa.hibernate.SpringImplicitNamingStrategy, java.class.path=/Users/jiyounglee/Desktop/projectlion/JSB_the_origin/practice/jpa/build/classes/java/main:/Users/jiyounglee/Desktop/projectlion/JSB_the_origin/practice/jpa/build/resources/main:/Users/jiyounglee/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-starter-data-jpa/2.5.10/d3449b2d63e95632326c9d3451bd0b2c68fddeeb/spring-boot-starter-data-jpa-2.5.10.jar:/Users/jiyounglee/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-starter-web/2.5.10/6e17869d0e40d414f4f175d622877bb3d5d5ca44/spring-boot-starter-web-2.5.10.jar:/Users/jiyounglee/.gradle/caches/modules-2/files-2.1/com.google.code.gson/gson/2.8.5/f645ed69d595b24d4cf8b3fbb64cc505bede8829/gson-2.8.5.jar:/Users/jiyounglee/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-starter-aop/2.5.10/6055b81000b3e23d32f5dfb48caea083193d2973/spring-boot-starter-aop-2.5.10.jar:/Users/jiyounglee/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-starter-jdbc/2.5.10/6bc1383904db84029166b5f2796aea3d0fc49ef4/spring-boot-starter-jdbc-2.5.10.jar:/Users/jiyounglee/.gradle/caches/modules-2/files-2.1/jakarta.transaction/jakarta.transaction-api/1.3.3/c4179d48720a1e87202115fbed6089bdc4195405/jakarta.transaction-api-1.3.3.jar:/Users/jiyounglee/.gradle/caches/modules-2/files-2.1/jakarta.persistence/jakarta.persistence-api/2.2.3/8f6ea5daedc614f07a3654a455660145286f024e/jakarta.persistence-api-2.2.3.jar:/Users/jiyounglee/.gradle/caches/modules-2/files-2.1/org.hibernate/hibernate-core/5.4.33/23fae08d13475d71acd374928e38d3f8e1baa3d3/hibernate-core-5.4.33.jar:/Users/jiyounglee/.gradle/caches/modules-2/files-2.1/org.springframework.data/spring-data-jpa/2.5.9/94a3680d8625c92650a36c7a7917851c497a7def/spring-data-jpa-2.5.9.jar:/Users/jiyounglee/.gradle/caches/modules-2/files-2.1/org.springframework/spring-aspects/5.3.16/499f2cd13d26fc0d6eb3312f0251c4f380300001/spring-aspects-5.3.16.jar:/Users/jiyounglee/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-starter-json/2.5.10/3b81ebebe8d1918061ef30dc6b24ddd379396abf/spring-boot-starter-json-2.5.10.jar:/Users/jiyounglee/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-starter/2.5.10/8fe7369289dd3c61fa6c3d64aefffc528f6de6b/spring-boot-starter-2.5.10.jar:/Users/jiyounglee/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-starter-tomcat/2.5.10/39ad1b7e459c8ac6cb814cabf6369fdd5f7363b/spring-boot-starter-tomcat-2.5.10.jar:/Users/jiyounglee/.gradle/caches/modules-2/files-2.1/org.springframework/spring-webmvc/5.3.16/18e0d7a9cf1c43b100296f86f61b58821dd1e6b9/spring-webmvc-5.3.16.jar:/Users/jiyounglee/.gradle/caches/modules-2/files-2.1/org.springframework/spring-web/5.3.16/224ae9b45e138034980a423e2f85d7bd63539a49/spring-web-5.3.16.jar:/Users/jiyounglee/.gradle/caches/modules-2/files-2.1/org.springframework/spring-aop/5.3.16/d61c0545e0395de608be52db1cccb60ba841a26b/spring-aop-5.3.16.jar:/Users/jiyounglee/.gradle/caches/modules-2/files-2.1/org.aspectj/aspectjweaver/1.9.7/158f5c255cd3e4408e795b79f7c3fbae9b53b7ca/aspectjweaver-1.9.7.jar:/Users/jiyounglee/.gradle/caches/modules-2/files-2.1/com.zaxxer/HikariCP/4.0.3/107cbdf0db6780a065f895ae9d8fbf3bb0e1c21f/HikariCP-4.0.3.jar:/Users/jiyounglee/.gradle/caches/modules-2/files-2.1/org.springframework/spring-jdbc/5.3.16/456645153d6a5ed62b3d27750ee1b3c34b460b71/spring-jdbc-5.3.16.jar:/Users/jiyounglee/.gradle/caches/modules-2/files-2.1/org.hibernate.common/hibernate-commons-annotations/5.1.2.Final/e59ffdbc6ad09eeb33507b39ffcf287679a498c8/hibernate-commons-annotations-5.1.2.Final.jar:/Users/jiyounglee/.gradle/caches/modules-2/files-2.1/org.jboss.logging/jboss-logging/3.4.3.Final/c4bd7e12a745c0e7f6cf98c45cdcdf482fd827ea/jboss-logging-3.4.3.Final.jar:/Users/jiyounglee/.gradle/caches/modules-2/files-2.1/org.javassist/javassist/3.27.0-GA/f63e6aa899e15eca8fdaa402a79af4c417252213/javassist-3.27.0-GA.jar:/Users/jiyounglee/.gradle/caches/modules-2/files-2.1/net.bytebuddy/byte-buddy/1.10.22/ef45d7e2cd1c600d279704f492ed5ce2ceb6cdb5/byte-buddy-1.10.22.jar:/Users/jiyounglee/.gradle/caches/modules-2/files-2.1/antlr/antlr/2.7.7/83cd2cd674a217ade95a4bb83a8a14f351f48bd0/antlr-2.7.7.jar:/Users/jiyounglee/.gradle/caches/modules-2/files-2.1/org.jboss/jandex/2.2.3.Final/d3865101f0666b63586683bd811d754517f331ab/jandex-2.2.3.Final.jar:/Users/jiyounglee/.gradle/caches/modules-2/files-2.1/com.fasterxml/classmate/1.5.1/3fe0bed568c62df5e89f4f174c101eab25345b6c/classmate-1.5.1.jar:/Users/jiyounglee/.gradle/caches/modules-2/files-2.1/org.dom4j/dom4j/2.1.3/a75914155a9f5808963170ec20653668a2ffd2fd/dom4j-2.1.3.jar:/Users/jiyounglee/.gradle/caches/modules-2/files-2.1/org.glassfish.jaxb/jaxb-runtime/2.3.6/1e6cd0e5d9f9919c8c8824fb4d310b09a978a60e/jaxb-runtime-2.3.6.jar:/Users/jiyounglee/.gradle/caches/modules-2/files-2.1/org.springframework/spring-context/5.3.16/efb9c749b335bf62dc07c1674e9d76d382a027e5/spring-context-5.3.16.jar:/Users/jiyounglee/.gradle/caches/modules-2/files-2.1/org.springframework/spring-orm/5.3.16/74e2e8227522a9f369b266b66fd71bf416d04a2f/spring-orm-5.3.16.jar:/Users/jiyounglee/.gradle/caches/modules-2/files-2.1/org.springframework.data/spring-data-commons/2.5.9/616f4d59b12639eb796decc4905cd54af28dc891/spring-data-commons-2.5.9.jar:/Users/jiyounglee/.gradle/caches/modules-2/files-2.1/org.springframework/spring-tx/5.3.16/ae9be43379f2967e015ace189d47728a99f18220/spring-tx-5.3.16.jar:/Users/jiyounglee/.gradle/caches/modules-2/files-2.1/org.springframework/spring-beans/5.3.16/15decec5cea7a91423272daaae6f5d050c23cf3b/spring-beans-5.3.16.jar:/Users/jiyounglee/.gradle/caches/modules-2/files-2.1/org.springframework/spring-core/5.3.16/db1b277cd548c725144580dda8703ce179fb3769/spring-core-5.3.16.jar:/Users/jiyounglee/.gradle/caches/modules-2/files-2.1/org.slf4j/slf4j-api/1.7.36/6c62681a2f655b49963a5983b8b0950a6120ae14/slf4j-api-1.7.36.jar:/Users/jiyounglee/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.datatype/jackson-datatype-jsr310/2.12.6/f7d0d854f24c4254885c275a09fb885ef578b48/jackson-datatype-jsr310-2.12.6.jar:/Users/jiyounglee/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.module/jackson-module-parameter-names/2.12.6/6149920352cfbdde97e6a3d35437260a72907761/jackson-module-parameter-names-2.12.6.jar:/Users/jiyounglee/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.datatype/jackson-datatype-jdk8/2.12.6/ccbbe6e72e3665e7ad9d0eee4613e1d8a09b81ae/jackson-datatype-jdk8-2.12.6.jar:/Users/jiyounglee/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.core/jackson-databind/2.12.6/fac216b606c1086e36acea6e572ee61572ad1670/jackson-databind-2.12.6.jar:/Users/jiyounglee/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-autoconfigure/2.5.10/16e56ca74f197f24c2c0ff04c9379ffafc48b9f1/spring-boot-autoconfigure-2.5.10.jar:/Users/jiyounglee/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot/2.5.10/4b9ae3a7e7e4b7c0acf09e7098db600eb9e219a2/spring-boot-2.5.10.jar:/Users/jiyounglee/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-starter-logging/2.5.10/8a63da6cb3babad2be3805fe3d2952a72ceee266/spring-boot-starter-logging-2.5.10.jar:/Users/jiyounglee/.gradle/caches/modules-2/files-2.1/jakarta.annotation/jakarta.annotation-api/1.3.5/59eb84ee0d616332ff44aba065f3888cf002cd2d/jakarta.annotation-api-1.3.5.jar:/Users/jiyounglee/.gradle/caches/modules-2/files-2.1/org.yaml/snakeyaml/1.28/7cae037c3014350c923776548e71c9feb7a69259/snakeyaml-1.28.jar:/Users/jiyounglee/.gradle/caches/modules-2/files-2.1/org.apache.tomcat.embed/tomcat-embed-websocket/9.0.58/be15775c1abc7fd9b8fda38a8991463e04de656f/tomcat-embed-websocket-9.0.58.jar:/Users/jiyounglee/.gradle/caches/modules-2/files-2.1/org.apache.tomcat.embed/tomcat-embed-core/9.0.58/5166fd9f6ffef571c22265c84a0b4354a835d4d2/tomcat-embed-core-9.0.58.jar:/Users/jiyounglee/.gradle/caches/modules-2/files-2.1/org.apache.tomcat.embed/tomcat-embed-el/9.0.58/a82095439a98c29b3d7eb136e76e0283bf3f005f/tomcat-embed-el-9.0.58.jar:/Users/jiyounglee/.gradle/caches/modules-2/files-2.1/org.springframework/spring-expression/5.3.16/831a17ce70686c571f3c05c4bcfb81012c5814df/spring-expression-5.3.16.jar:/Users/jiyounglee/.gradle/caches/modules-2/files-2.1/jakarta.xml.bind/jakarta.xml.bind-api/2.3.3/48e3b9cfc10752fba3521d6511f4165bea951801/jakarta.xml.bind-api-2.3.3.jar:/Users/jiyounglee/.gradle/caches/modules-2/files-2.1/org.glassfish.jaxb/txw2/2.3.6/45db7b69a8f1ec2c21eb7d4fc0ee729f53c1addc/txw2-2.3.6.jar:/Users/jiyounglee/.gradle/caches/modules-2/files-2.1/com.sun.istack/istack-commons-runtime/3.0.12/cbbe1a62b0cc6c85972e99d52aaee350153dc530/istack-commons-runtime-3.0.12.jar:/Users/jiyounglee/.gradle/caches/modules-2/files-2.1/org.springframework/spring-jcl/5.3.16/18d422952e0ce534c2b0ac8b47176c2432fb7e78/spring-jcl-5.3.16.jar:/Users/jiyounglee/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.core/jackson-annotations/2.12.6/9487231edd6b0b1f14692c9cba9e0462809215d1/jackson-annotations-2.12.6.jar:/Users/jiyounglee/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.core/jackson-core/2.12.6/5bf206c0b5982cfcd868b3d9349dc5190db8bab5/jackson-core-2.12.6.jar:/Users/jiyounglee/.gradle/caches/modules-2/files-2.1/ch.qos.logback/logback-classic/1.2.10/f69d97ef3335c6ab82fc21dfb77ac613f90c1221/logback-classic-1.2.10.jar:/Users/jiyounglee/.gradle/caches/modules-2/files-2.1/org.apache.logging.log4j/log4j-to-slf4j/2.17.1/3619fd18278a1a895c1dca8c5be002768071a20e/log4j-to-slf4j-2.17.1.jar:/Users/jiyounglee/.gradle/caches/modules-2/files-2.1/org.slf4j/jul-to-slf4j/1.7.36/ed46d81cef9c412a88caef405b58f93a678ff2ca/jul-to-slf4j-1.7.36.jar:/Users/jiyounglee/.gradle/caches/modules-2/files-2.1/ch.qos.logback/logback-core/1.2.10/5328406bfcae7bcdcc86810fcb2920d2c297170d/logback-core-1.2.10.jar:/Users/jiyounglee/.gradle/caches/modules-2/files-2.1/org.apache.logging.log4j/log4j-api/2.17.1/d771af8e336e372fb5399c99edabe0919aeaf5b2/log4j-api-2.17.1.jar:/Users/jiyounglee/.gradle/caches/modules-2/files-2.1/mysql/mysql-connector-java/8.0.28/33678b1729d4f832b9e4bcb2d5bbd67940920a7a/mysql-connector-java-8.0.28.jar:/Users/jiyounglee/.gradle/caches/modules-2/files-2.1/com.h2database/h2/1.4.200/f7533fe7cb8e99c87a43d325a77b4b678ad9031a/h2-1.4.200.jar:/Users/jiyounglee/.gradle/caches/modules-2/files-2.1/com.sun.activation/jakarta.activation/1.2.2/74548703f9851017ce2f556066659438019e7eb5/jakarta.activation-1.2.2.jar, java.vm.vendor=Oracle Corporation, sun.arch.data.model=64, java.vendor.url=https://openjdk.java.net/, catalina.useNaming=false, user.timezone=Asia/Seoul, os.name=Mac OS X, java.vm.specification.version=11, javax.persistence.validation.mode=AUTO, sun.java.launcher=SUN_STANDARD, user.country=GB, sun.boot.library.path=/Library/Java/JavaVirtualMachines/jdk-11.0.13.jdk/Contents/Home/lib, sun.java.command=dev.summer.jpa.JpaApplication, spring.application.admin.enabled=true, javax.persistence.nonJtaDataSource=HikariDataSource (HikariPool-1), hibernate.transaction.jta.platform=org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform@7d7d8911, http.nonProxyHosts=local|*.local|169.254/16|*.169.254/16, com.sun.management.jmxremote=, javax.persistence.sharedCache.mode=UNSPECIFIED, jdk.debug=release, spring.liveBeansView.mbeanDomain=, sun.cpu.endian=little, user.home=/Users/jiyounglee, user.language=en, java.specification.vendor=Oracle Corporation, java.version.date=2021-10-19, java.home=/Library/Java/JavaVirtualMachines/jdk-11.0.13.jdk/Contents/Home, file.separator=/, spring.output.ansi.enabled=always, java.vm.compressedOopsMode=Zero based, line.separator=
+, java.specification.name=Java Platform API Specification, java.vm.specification.vendor=Oracle Corporation, FILE_LOG_CHARSET=UTF-8, hibernate.transaction.coordinator_class=class org.hibernate.resource.transaction.backend.jdbc.internal.JdbcResourceLocalTransactionCoordinatorBuilderImpl, java.awt.graphicsenv=sun.awt.CGraphicsEnvironment, java.awt.headless=true, hibernate.hbm2ddl.auto=create, sun.management.compiler=HotSpot 64-Bit Tiered Compilers, ftp.nonProxyHosts=local|*.local|169.254/16|*.169.254/16, java.runtime.version=11.0.13+10-LTS-370, user.name=jiyounglee, spring.jmx.enabled=true, path.separator=:, os.version=11.2, java.runtime.name=Java(TM) SE Runtime Environment, file.encoding=UTF-8, hibernate.ejb.persistenceUnitName=default, spring.beaninfo.ignore=true, java.vm.name=Java HotSpot(TM) 64-Bit Server VM, java.vendor.version=18.9, java.vendor.url.bug=https://bugreport.java.com/bugreport/, java.io.tmpdir=/var/folders/gb/14cfmmc14n9bjq8wz4211g3h0000gn/T/, catalina.home=/private/var/folders/gb/14cfmmc14n9bjq8wz4211g3h0000gn/T/tomcat.8080.7082422442192117544, java.version=11.0.13, hibernate.physical_naming_strategy=org.springframework.boot.orm.jpa.hibernate.SpringPhysicalNamingStrategy, user.dir=/Users/jiyounglee/Desktop/projectlion/JSB_the_origin/practice/jpa, os.arch=x86_64, java.vm.specification.name=Java Virtual Machine Specification, PID=25600, java.awt.printerjob=sun.lwawt.macosx.CPrinterJob, sun.os.patch.level=unknown, CONSOLE_LOG_CHARSET=UTF-8, catalina.base=/private/var/folders/gb/14cfmmc14n9bjq8wz4211g3h0000gn/T/tomcat.8080.7082422442192117544, hibernate.boot.CfgXmlAccessService.key=org.hibernate.boot.registry.StandardServiceRegistryBuilder$1@460eb276, java.library.path=/Users/jiyounglee/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:., java.vendor=Oracle Corporation, java.vm.info=mixed mode, java.vm.version=11.0.13+10-LTS-370, hibernate.bytecode.use_reflection_optimizer=false, java.rmi.server.randomIDs=true, sun.io.unicode.encoding=UnicodeBig, hibernate.archive.scanner=org.hibernate.boot.archive.scan.internal.DisabledScanner, hibernate.connection.datasource=HikariDataSource (HikariPool-1), socksNonProxyHosts=local|*.local|169.254/16|*.169.254/16, java.class.version=55.0}
+2022-03-04 21:45:38,735 DEBUG JaccIntegrator [main] Skipping JACC integration as it was not enabled
+2022-03-04 21:45:38,736 DEBUG SessionFactoryImpl [main] Instantiated session factory
+2022-03-04 21:45:38,736 DEBUG TypeConfiguration [main] Scoping TypeConfiguration [org.hibernate.type.spi.TypeConfiguration@15186ce0] to SessionFactoryImpl [org.hibernate.internal.SessionFactoryImpl@8debe42]
+2022-03-04 21:45:38,751 DEBUG LoggingProviderImpl$JULWrapper [HikariPool-1 connection adder]  TLSHandshake: 127.0.0.1:3306, TLSv1.3, TLS_AES_256_GCM_SHA384, 2145334856
+2022-03-04 21:45:38,759 DEBUG ClassLoaderAccessImpl [main] Not known whether passed class name [dev.summer.jpa.entity.PostEntity] is safe
+2022-03-04 21:45:38,760 DEBUG ClassLoaderAccessImpl [main] No temp ClassLoader provided; using live ClassLoader for loading potentially unsafe class : dev.summer.jpa.entity.PostEntity
+2022-03-04 21:45:38,767 DEBUG HikariPool$PoolEntryCreator [HikariPool-1 connection adder] HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@659f6c88
+2022-03-04 21:45:38,841 DEBUG LoggingProviderImpl$JULWrapper [HikariPool-1 connection adder]  TLSHandshake: 127.0.0.1:3306, TLSv1.3, TLS_AES_256_GCM_SHA384, 2145334856
+2022-03-04 21:45:38,861 DEBUG HikariPool$PoolEntryCreator [HikariPool-1 connection adder] HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@20117829
+2022-03-04 21:45:38,899 DEBUG LoggingProviderImpl$JULWrapper [HikariPool-1 connection adder]  TLSHandshake: 127.0.0.1:3306, TLSv1.3, TLS_AES_256_GCM_SHA384, 2145334856
+2022-03-04 21:45:38,910 DEBUG HikariPool$PoolEntryCreator [HikariPool-1 connection adder] HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@49b9b972
+2022-03-04 21:45:38,923 DEBUG ClassLoaderAccessImpl [main] Not known whether passed class name [dev.summer.jpa.entity.BoardEntity] is safe
+2022-03-04 21:45:38,923 DEBUG ClassLoaderAccessImpl [main] No temp ClassLoader provided; using live ClassLoader for loading potentially unsafe class : dev.summer.jpa.entity.BoardEntity
+2022-03-04 21:45:38,944 DEBUG LoggingProviderImpl$JULWrapper [HikariPool-1 connection adder]  TLSHandshake: 127.0.0.1:3306, TLSv1.3, TLS_AES_256_GCM_SHA384, 2145334856
+2022-03-04 21:45:38,955 DEBUG HikariPool$PoolEntryCreator [HikariPool-1 connection adder] HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@5e27e495
+2022-03-04 21:45:38,969 DEBUG AbstractCollectionPersister [main] Static SQL for collection: dev.summer.jpa.entity.BoardEntity.postEntityList
+2022-03-04 21:45:38,969 DEBUG AbstractCollectionPersister [main]  Row insert: update post set board_id=? where id=?
+2022-03-04 21:45:38,969 DEBUG AbstractCollectionPersister [main]  Row update: update post set  where id=?
+2022-03-04 21:45:38,969 DEBUG AbstractCollectionPersister [main]  Row delete: update post set board_id=null where board_id=? and id=?
+2022-03-04 21:45:38,969 DEBUG AbstractCollectionPersister [main]  One-shot delete: update post set board_id=null where board_id=?
+2022-03-04 21:45:38,975 DEBUG AbstractEntityPersister [main] Static SQL for entity: dev.summer.jpa.entity.PostEntity
+2022-03-04 21:45:38,976 DEBUG AbstractEntityPersister [main]  Version select: select id from post where id =?
+2022-03-04 21:45:38,976 DEBUG AbstractEntityPersister [main]  Snapshot select: select postentity_.id, postentity_.updated_at as updated_3_1_, postentity_.board_id as board_id7_1_, postentity_.content as content4_1_, postentity_.title as title5_1_, postentity_.writer as writer6_1_ from post postentity_ where postentity_.id=?
+2022-03-04 21:45:38,976 DEBUG DelegatingBasicLogger [main]  Insert 0: insert into post (created_at, updated_at, board_id, content, title, writer, id) values (?, ?, ?, ?, ?, ?, ?)
+2022-03-04 21:45:38,976 DEBUG DelegatingBasicLogger [main]  Update 0: update post set updated_at=?, board_id=?, content=?, title=?, writer=? where id=?
+2022-03-04 21:45:38,976 DEBUG DelegatingBasicLogger [main]  Delete 0: delete from post where id=?
+2022-03-04 21:45:38,976 DEBUG AbstractEntityPersister [main]  Identity insert: insert into post (created_at, updated_at, board_id, content, title, writer) values (?, ?, ?, ?, ?, ?)
+2022-03-04 21:45:38,982 DEBUG LoggingProviderImpl$JULWrapper [HikariPool-1 connection adder]  TLSHandshake: 127.0.0.1:3306, TLSv1.3, TLS_AES_256_GCM_SHA384, 2145334856
+2022-03-04 21:45:38,992 DEBUG QuerySpacesImpl [main] Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@46fa2a7e]
+2022-03-04 21:45:38,993 DEBUG MetamodelGraphWalker [main] Visiting attribute path : createdAt
+2022-03-04 21:45:38,993 DEBUG MetamodelGraphWalker [main] Visiting attribute path : updatedAt
+2022-03-04 21:45:38,993 DEBUG MetamodelGraphWalker [main] Visiting attribute path : boardEntity
+2022-03-04 21:45:38,994 DEBUG HikariPool$PoolEntryCreator [HikariPool-1 connection adder] HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@1c2d255a
+2022-03-04 21:45:38,995 DEBUG QuerySpacesImpl [main] Adding QuerySpace : uid = <gen:1> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@2a9f8d47]
+2022-03-04 21:45:38,996 DEBUG MetamodelGraphWalker [main] Visiting attribute path : content
+2022-03-04 21:45:38,996 DEBUG MetamodelGraphWalker [main] Visiting attribute path : title
+2022-03-04 21:45:38,996 DEBUG MetamodelGraphWalker [main] Visiting attribute path : writer
+2022-03-04 21:45:38,996 DEBUG FetchStyleLoadPlanBuildingAssociationVisitationStrategy [main] Building LoadPlan...
