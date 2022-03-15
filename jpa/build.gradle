@@ -18,7 +18,7 @@ dependencies {
 	implementation 'com.google.code.gson:gson:2.8.5'
 	implementation 'org.springframework.boot:spring-boot-starter-aop'
 	implementation 'org.springframework.boot:spring-boot-starter-validation'
-	runtimeOnly 'mysql:mysql-connector-java'
+	implementation 'org.springframework.boot:spirng-boot-starter-actuator'
 	runtimeOnly 'com.h2database:h2'
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
 	testImplementation ('org.junit.vintage:junit-vintage-engine') {
