@@ -1,0 +1,3 @@
+2022-03-15 20:55:23,562 WARN SqlExceptionHelper [Test worker] SQL Error: 42102, SQLState: 42S02
+2022-03-15 20:55:23,565 ERROR SqlExceptionHelper [Test worker] Table "POST" not found; SQL statement:
+insert into post (created_at, updated_at, content, title, writer) values (?, ?, ?, ?, ?) [42102-200]

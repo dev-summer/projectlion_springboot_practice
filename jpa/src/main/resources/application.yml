@@ -1,14 +1,13 @@
 spring:
   profiles:
-    active: local
-
-custom:
-  property:
-    single: custom-property
-    comlist: comma,separated,list,to,value
-    ncp:
-      id: api-idd
-      key: api-key
-      url: htts://ncp.com
-# custom.property.single
-# custom.property.comlist
+    active: test
+management:
+  endpoints:
+    enabled-by-default: true
+    web:
+      exposure:
+        include: health,info,loggers,shutdown,prometheus
+  endpoint:
+    health:
+      show-details: always
+      show-components: always
