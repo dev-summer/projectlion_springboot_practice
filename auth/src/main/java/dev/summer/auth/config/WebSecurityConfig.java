@@ -10,9 +10,23 @@ import org.springframework.security.config.annotation.web.configuration.WebSecur
 public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
     @Override
     protected void configure(HttpSecurity http) throws Exception {
-        http.
-                authorizeRequests()
+        http
+                .authorizeRequests()
+                .antMatchers("/home/**")
+                .anonymous()
                 .anyRequest()
+                .authenticated()
+            .and()
+                .formLogin()
+                .loginPage("/user/login")
+                .defaultSuccessUrl("/home")
+                .permitAll()
+            .and()
+                .logout()
+                .logoutUrl("/user/logout")
+                .logoutSuccessUrl("/home")
+                .deleteCookies("JSESSIONID")
+                .invalidateHttpSession(true)
                 .permitAll()
         ;
     }
