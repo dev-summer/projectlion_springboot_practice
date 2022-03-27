@@ -9,6 +9,7 @@ import org.springframework.security.core.userdetails.User;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
+import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;
@@ -17,12 +18,15 @@ import java.util.ArrayList;
 public class CustomUserDetailsService implements UserDetailsService {
     private final static Logger logger = LoggerFactory.getLogger(CustomUserDetailsService.class);
     private final UserRepository userRepository;
+    private final PasswordEncoder passwordEncoder;
 
-    public CustomUserDetailsService(@Autowired UserRepository userRepository) {
+    public CustomUserDetailsService(@Autowired UserRepository userRepository,
+                                    @Autowired PasswordEncoder passwordEncoder) {
         this.userRepository = userRepository;
+        this.passwordEncoder = passwordEncoder;
         final UserEntity testUserEntity = new UserEntity();
         testUserEntity.setUsername("entity_user");
-        testUserEntity.setPassword("test1pass");
+        testUserEntity.setPassword(passwordEncoder.encode("test1pass"));
         this.userRepository.save(testUserEntity);
     }
 
