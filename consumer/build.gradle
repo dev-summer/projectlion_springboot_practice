@@ -17,6 +17,11 @@ dependencies {
 	implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
 	implementation 'org.springframework.boot:spring-boot-starter-web'
 	runtimeOnly 'com.h2database:h2'
+	implementation ('org.springframework.boot:spring-boot-starter-data-redis'){
+		exclude group: 'io.lecttuce', module: 'lettuce-core'
+	}
+	implementation 'redis.clients:jedis'
+	implementation 'com.google.code.gson:gson:2.9.0'
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
 	testImplementation 'org.springframework.amqp:spring-rabbit-test'
 }
